@@ -5,10 +5,11 @@ EU CEF Action 2019-ES-IA-0121
 University of Cantabria
 Developer: Johnny Choque (jchoque@tlmat.unican.es)
 '''
+import sys
+
 import requests
 import json
 from rdflib import Graph
-import argparse
 import mqaMetrics as mqa
 import os
 
@@ -90,20 +91,16 @@ def get_metrics(g):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Calculates the score obtained by a metadata according to the MQA methodology specified by '
-                    'data.europa.eu')
-    parser.add_argument('-f', '--file', type=str, required=True, help='RDF file to be validated')
-    args = parser.parse_args()
+    dataset_content = json.load(sys.stdin)
 
     g = Graph()
-    g.parse(args.file, format="application/rdf+xml")
+    g.parse(data=dataset_content, format="application/ld+json")
 
     mach_read_voc = load_edp_vocabulary(MACH_READ_FILE)
     non_prop_voc = load_edp_vocabulary(NON_PROP_FILE)
 
     weight = 0
-    weight = edp_validator(args.file, weight)
+    weight = edp_validator(dataset_content, weight)
     print('   Current weight =', weight)
 
     metrics = get_metrics(g)
