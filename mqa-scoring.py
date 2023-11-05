@@ -15,8 +15,8 @@ import os
 
 URL_EDP = 'https://data.europa.eu/api/mqa/shacl/validation/report'
 HEADERS = {'content-type': 'application/rdf+xml'}
-MACH_READ_FILE = os.path.join('edp-vocabularies', 'edp-machine-readable-format.rdf')
-NON_PROP_FILE = os.path.join('edp-vocabularies', 'edp-non-proprietary-format.rdf')
+MACH_READ_FILE = 'edp-vocabularies/edp-machine-readable-format.rdf'
+NON_PROP_FILE = 'edp-vocabularies/edp-non-proprietary-format.rdf'
 
 
 def other_cases(pred, objs, g):
@@ -92,12 +92,15 @@ def get_metrics(g):
 
 def main():
     dataset_content = json.load(sys.stdin)
+    install_dir = sys.argv[1]
 
     g = Graph()
     g.parse(data=json.dumps(dataset_content), format="json-ld")
 
-    mach_read_voc = load_edp_vocabulary(MACH_READ_FILE)
-    non_prop_voc = load_edp_vocabulary(NON_PROP_FILE)
+    mach_read_path = os.path.join(install_dir, MACH_READ_FILE)
+    non_prop_path = os.path.join(install_dir, NON_PROP_FILE)
+    mach_read_voc = load_edp_vocabulary(mach_read_path)
+    non_prop_voc = load_edp_vocabulary(non_prop_path)
 
     weight = 0
     weight = edp_validator(dataset_content, weight)
