@@ -160,7 +160,10 @@ def main():
     result = {
         'type': 'Property',
         'value': weight,
-        'details': result_details
+        'details': {
+            'type': 'Property',
+            'value': result_details
+        }
     }
     json.dump(result, sys.stdout, indent=4)
 
