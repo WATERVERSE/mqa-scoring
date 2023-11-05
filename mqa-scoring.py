@@ -45,25 +45,20 @@ def load_edp_vocabulary(file):
     return voc
 
 
-def edp_validator(file, weight):
+def edp_validator(dataset_entity, weight):
     print('* SHACL validation')
     try:
-        rdf_file = open(file, mode="r", encoding="utf-8")
-    except Exception as e:
-        raise SystemExit(e)
-    with rdf_file:
-        try:
-            payload = rdf_file.read().replace("\n", " ")
-            r_edp = requests.post(URL_EDP, data=payload.encode('utf-8'), headers=HEADERS)
-            r_edp.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            raise SystemExit(err)
-        report = json.loads(r_edp.text)
-        if val_result(report):
-            print('   Result: OK. The metadata has successfully passed the EDP validator. Weight assigned 30')
-            weight = weight + 30
-        else:
-            print('   Result: ERROR. DCAT-AP errors found in metadata')
+        payload = dataset_entity.replace("\n", " ")
+        r_edp = requests.post(URL_EDP, data=payload.encode('utf-8'), headers=HEADERS)
+        r_edp.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise SystemExit(err)
+    report = json.loads(r_edp.text)
+    if val_result(report):
+        print('   Result: OK. The metadata has successfully passed the EDP validator. Weight assigned 30')
+        weight = weight + 30
+    else:
+        print('   Result: ERROR. DCAT-AP errors found in metadata')
     return weight
 
 
@@ -103,7 +98,7 @@ def main():
     non_prop_voc = load_edp_vocabulary(non_prop_path)
 
     weight = 0
-    weight = edp_validator(dataset_content, weight)
+    weight = edp_validator(json.dumps(dataset_content), weight)
     print('   Current weight =', weight)
 
     metrics = get_metrics(g)
