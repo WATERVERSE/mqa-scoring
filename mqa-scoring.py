@@ -14,7 +14,7 @@ import mqaMetrics as mqa
 import os
 
 URL_EDP = 'https://data.europa.eu/api/mqa/shacl/validation/report'
-HEADERS = {'content-type': 'application/ld+json'}
+HEADERS = {'Content-Type': 'application/ld+json'}
 MACH_READ_FILE = 'edp-vocabularies/edp-machine-readable-format.rdf'
 NON_PROP_FILE = 'edp-vocabularies/edp-non-proprietary-format.rdf'
 
@@ -48,10 +48,11 @@ def load_edp_vocabulary(file):
 def edp_validator(dataset_entity, weight):
     print('* SHACL validation')
     try:
-        payload = dataset_entity.replace("\n", " ")
-        r_edp = requests.post(URL_EDP, data=payload.encode('utf-8'), headers=HEADERS)
+        r_edp = requests.post(URL_EDP, data=dataset_entity, headers=HEADERS)
         r_edp.raise_for_status()
     except requests.exceptions.HTTPError as err:
+        print(err, file=sys.stderr)
+        print(err.response.text, file=sys.stderr)
         raise SystemExit(err)
     report = json.loads(r_edp.text)
     if val_result(report):
