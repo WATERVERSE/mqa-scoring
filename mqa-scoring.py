@@ -158,11 +158,13 @@ def main():
     #     print('   Result: WARN. The properties do not belong to a controlled vocabulary')
 
     result = {
-        'type': 'Property',
-        'value': weight,
-        'details': {
+        'fairScore': {
             'type': 'Property',
-            'value': result_details
+            'value': weight,
+            'details': {
+                'type': 'Property',
+                'value': result_details
+            }
         }
     }
     json.dump(result, sys.stdout, indent=4)
