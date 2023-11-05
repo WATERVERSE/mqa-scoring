@@ -23,9 +23,9 @@ def other_cases(pred, objs, g):
     for obj in objs:
         met = str_metric(obj, g)
         if met is None:
-            print('   Result: WARN. Not included in MQA - ' + str_metric(pred, g))
+            return mqa.format_result(0, 'Not included in MQA - ' + str_metric(pred, g))
         else:
-            print('   Result: WARN. Not included in MQA - ' + str(met))
+            return mqa.format_result(0, 'Not included in MQA - ' + str(met))
 
 
 def str_metric(val, g):
@@ -99,8 +99,8 @@ def main():
     non_prop_voc = load_edp_vocabulary(non_prop_path)
 
     weight = 0
-    weight = edp_validator(json.dumps(dataset_content), weight)
-    print('   Current weight =', weight)
+    # weight = edp_validator(json.dumps(dataset_content), weight)
+    # print('   Current weight =', weight)
 
     metrics = get_metrics(g)
     f_res = {}
@@ -108,58 +108,61 @@ def main():
     m_res = {}
     m_res = m_res.fromkeys(['result', 'weight'])
 
+    result_details = {}
     for pred in metrics.keys():
         met = str_metric(pred, g)
         objs = metrics[pred]
-        print('*', met)
         if met == "dcat:accessURL":
-            weight = mqa.access_url(objs, weight)
+            result_met = mqa.access_url(objs)
         elif met == "dcat:downloadURL":
-            weight = mqa.download_url(objs, weight)
+            result_met = mqa.download_url(objs)
         elif met == "dcat:keyword":
-            weight = mqa.keyword(weight)
+            result_met = mqa.keyword()
         elif met == "dcat:theme":
-            weight = mqa.theme(weight)
+            result_met = mqa.theme()
         elif met == "dct:spatial":
-            weight = mqa.spatial(weight)
+            result_met = mqa.spatial()
         elif met == "dct:temporal":
-            weight = mqa.temporal(weight)
+            result_met = mqa.temporal()
         elif met == "dct:format":
-            f_res = mqa.format(objs, mach_read_voc, non_prop_voc, weight)
-            weight = f_res['weight']
+            result_met = mqa.format(objs, mach_read_voc, non_prop_voc)
         elif met == "dct:license":
-            weight = mqa.license(objs, weight)
+            result_met = mqa.license(objs)
         elif met == "dcat:contactPoint":
-            weight = mqa.contactpoint(weight)
+            result_met = mqa.contact_point()
         elif met == "dcat:mediaType":
-            m_res = mqa.mediatype(objs, weight)
-            weight = m_res['weight']
+            result_met = mqa.mediatype(objs)
         elif met == "dct:publisher":
-            weight = mqa.publisher(weight)
+            result_met = mqa.publisher()
         elif met == "dct:accessRights":
-            weight = mqa.access_rights(objs, weight)
+            result_met = mqa.access_rights(objs)
         elif met == "dct:issued":
-            weight = mqa.issued(weight)
+            result_met = mqa.issued()
         elif met == "dct:modified":
-            weight = mqa.modified(weight)
+            result_met = mqa.modified()
         elif met == "dct:rights":
-            weight = mqa.rights(weight)
+            result_met = mqa.rights()
         elif met == "dcat:byteSize":
-            weight = mqa.byte_size(weight)
+            result_met = mqa.byte_size()
         else:
-            other_cases(pred, objs, g)
-        print('   Current weight =', weight)
+            result_met = other_cases(pred, objs, g)
+        result_details[met] = result_met
+        weight += result_met['weight']
 
-    print('* dct:format & dcat:mediaType')
-    if f_res['result'] and m_res['result']:
-        weight = weight + 10
-        print('   Result: OK. The properties belong to a controlled vocabulary. Weight assigned 10')
-        print('   Current weight=', weight)
-    else:
-        print('   Result: WARN. The properties do not belong to a controlled vocabulary')
+    # print('* dct:format & dcat:mediaType')
+    # if f_res['result'] and m_res['result']:
+    #     weight = weight + 10
+    #     print('   Result: OK. The properties belong to a controlled vocabulary. Weight assigned 10')
+    #     print('   Current weight=', weight)
+    # else:
+    #     print('   Result: WARN. The properties do not belong to a controlled vocabulary')
 
-    print('\n')
-    print('Overall MQA scoring:', str(weight))
+    result = {
+        'type': 'Property',
+        'value': weight,
+        'details': result_details
+    }
+    json.dump(result, sys.stdout, indent=4)
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@ import requests
 from rdflib import Graph, URIRef
 
 
-def access_url(urls, weight):
+def access_url(urls):
     checked = True
     for url in urls:
         try:
@@ -20,17 +20,13 @@ def access_url(urls, weight):
         except:
             checked = checked and False
     if checked:
-        weight = weight + 50
-        print('   Result: OK. Weight assigned 50')
+        return format_result(50, 'OK. Weight assigned 50')
     else:
-        print('   Result: ERROR - Responded status code of HTTP HEAD request is not in the 200 or 300 range')
-    return weight
+        return format_result(0, 'ERROR - Responded status code of HTTP HEAD request is not in the 200 or 300 range')
 
 
-def download_url(urls, weight):
+def download_url(urls):
     checked = True
-    print('   Result: OK. The property is set. Weight assigned 20')
-    weight = weight + 20
     for url in urls:
         try:
             res = requests.get(url)
@@ -41,43 +37,34 @@ def download_url(urls, weight):
         except:
             checked = checked and False
     if checked:
-        weight = weight + 30
-        print('   Result: OK. Weight assigned 30')
+        return format_result(50, 'OK. Weight assigned 50')
     else:
-        print('   Result: ERROR - Responded status code of HTTP HEAD request is not in the 200 or 300 range')
-    return weight
+        return format_result(20, 'WARN - Property assigned but responded status code of HTTP HEAD request is not in '
+                                 'the 200 or 300 range. Weight assigned to 20')
 
 
-def keyword(weight):
-    weight = weight + 30
-    print('   Result: OK. The property is set. Weight assigned 30')
-    return weight
+def keyword():
+    return format_result(30, 'OK. The property is set. Weight assigned 30')
 
 
-def theme(weight):
-    weight = weight + 30
-    print('   Result: OK. The property is set. Weight assigned 30')
-    return weight
+def theme():
+    return format_result(30, 'OK. The property is set. Weight assigned 30')
 
 
-def spatial(weight):
-    weight = weight + 20
-    print('   Result: OK. The property is set. Weight assigned 20')
-    return weight
+def spatial():
+    return format_result(20, 'OK. The property is set. Weight assigned 20')
 
 
-def temporal(weight):
-    weight = weight + 20
-    print('   Result: OK. The property is set. Weight assigned 20')
-    return weight
+def temporal():
+    return format_result(20, 'OK. The property is set. Weight assigned 20')
 
 
-def format(urls, mach_read_voc, non_prop_voc, weight):
+def format(urls, mach_read_voc, non_prop_voc):
     mach_read_checked = True
     non_prop_checked = True
     found_checked = True
-    print('   Result: OK. The property is set. Weight assigned 20')
-    weight = weight + 20
+    details = 'OK. The property is set. Weight assigned 20.'
+    weight = 20
     for url in urls:
         if str(url) in mach_read_voc:
             mach_read_checked = mach_read_checked and True
@@ -94,26 +81,24 @@ def format(urls, mach_read_voc, non_prop_voc, weight):
         else:
             found_checked = found_checked and False
     if mach_read_checked:
-        print('   Result: OK. The property is machine-readable. Weight assigned 20')
+        details += 'OK. The property is machine-readable. Weight assigned 20'
         weight = weight + 20
     else:
-        print('   Result: ERROR. The property is not machine-readable')
+        details += 'ERROR. The property is not machine-readable'
     if non_prop_checked:
-        print('   Result: OK. The property is non-proprietary. Weight assigned 20')
+        details += 'OK. The property is non-proprietary. Weight assigned 20'
         weight = weight + 20
     else:
-        print('   Result: ERROR. The property is not non-proprietary')
+        details += 'ERROR. The property is not non-proprietary'
     if found_checked:
-        result = True
+        details += 'OK. Found checked is True'
     else:
-        result = False
-    return {'result': result, 'url': str(url), 'weight': weight}
+        details += 'ERROR. Found checked is False'
+    return {'details': details, 'weight': weight}
 
 
-def license(urls, weight):
+def license(urls):
     checked = True
-    weight = weight + 20
-    print('   Result: OK. The property is set. Weight assigned 20')
     for url in urls:
         g = Graph()
         g.parse(url, format="application/rdf+xml")
@@ -122,23 +107,18 @@ def license(urls, weight):
         else:
             checked = checked and False
     if checked:
-        weight = weight + 10
-        print('   Result: OK. The property provides the correct license information. Weight assigned 10')
+        return format_result(30, 'OK. The property is set and provides the correct license information. '
+                                 'Weight assigned 30')
     else:
-        print('   Result: ERROR. The license is incorrect -', str(url))
-    return weight
+        return format_result(20, 'OK. The property is set but the license is incorrect. Weight assigned 20')
 
 
-def contactpoint(weight):
-    weight = weight + 20
-    print('   Result: OK. The property is set. Weight assigned 20')
-    return weight
+def contact_point():
+    return format_result(20, 'OK. The property is set. Weight assigned 20')
 
 
-def mediatype(urls, weight):
+def mediatype(urls):
     checked = True
-    weight = weight + 10
-    print('   Result: OK. The property is set. Weight assigned 10')
     for url in urls:
         res = requests.get(str(url))
         if res.status_code != 404:
@@ -146,24 +126,19 @@ def mediatype(urls, weight):
         else:
             checked = checked and False
     if checked:
-        result = True
+        return format_result(20, 'OK. The property is set and correct. Weight assigned 20')
     else:
-        result = False
-    return {'result': result, 'weight': weight}
+        return format_result(10, 'OK. The property is set but incorrect. Weight assigned 10')
 
 
-def publisher(weight):
-    weight = weight + 10
-    print('   Result: OK. The property is set. Weight assigned 10')
-    return weight
+def publisher():
+    return format_result(10, 'OK. The property is set. Weight assigned 10')
 
 
-def access_rights(urls, weight):
+def access_rights(urls):
     uri = URIRef('')
     checked = True
     is_url = True
-    weight = weight + 10
-    print('   Result: OK. The property is set. Weight assigned 10')
     for url in urls:
         g = Graph()
         if type(url) != type(uri):
@@ -176,34 +151,31 @@ def access_rights(urls, weight):
             checked = checked and False
     if is_url:
         if checked:
-            weight = weight + 5
-            print('   Result: OK. The property uses a controlled vocabulary. Weight assigned 5')
+            return format_result(15, 'OK. The property is set and uses a controlled vocabulary. Weight assigned 15')
         else:
-            print('   Result: ERROR. The license is incorrect -', str(url))
+            return format_result(10, 'OK. The property is set but the license is incorrect. Weight assigned 10')
     else:
-        print('   Result: ERROR. The property does not use a valid URL. No additional weight assigned')
-    return weight
+        return format_result(10, 'OK. The property is set but does not use a valid URL. Weight assigned 10')
 
 
-def issued(weight):
-    weight = weight + 5
-    print('   Result: OK. The property is set. Weight assigned 5')
-    return weight
+def issued():
+    return format_result(5, 'OK. The property is set. Weight assigned 5')
 
 
-def modified(weight):
-    weight = weight + 5
-    print('   Result: OK. The property is set. Weight assigned 5')
-    return weight
+def modified():
+    return format_result(5, 'OK. The property is set. Weight assigned 5')
 
 
-def rights(weight):
-    weight = weight + 5
-    print('   Result: OK. The property is set. Weight assigned 5')
-    return weight
+def rights():
+    return format_result(5, 'OK. The property is set. Weight assigned 5')
 
 
-def byte_size(weight):
-    weight = weight + 5
-    print('   Result: OK. The property is set. Weight assigned 5')
-    return weight
+def byte_size():
+    return format_result(5, 'OK. The property is set. Weight assigned 5')
+
+
+def format_result(weight, details):
+    return {
+        'weight': weight,
+        'details': details
+    }
