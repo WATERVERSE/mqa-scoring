@@ -14,7 +14,7 @@ import mqaMetrics as mqa
 import os
 
 URL_EDP = 'https://data.europa.eu/api/mqa/shacl/validation/report'
-HEADERS = {'content-type': 'application/rdf+xml'}
+HEADERS = {'content-type': 'application/ld+json'}
 MACH_READ_FILE = 'edp-vocabularies/edp-machine-readable-format.rdf'
 NON_PROP_FILE = 'edp-vocabularies/edp-non-proprietary-format.rdf'
 
