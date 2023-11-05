@@ -94,7 +94,7 @@ def main():
     dataset_content = json.load(sys.stdin)
 
     g = Graph()
-    g.parse(data=json.dumps(dataset_content), format="application/ld+json")
+    g.parse(data=json.dumps(dataset_content), format="json-ld")
 
     mach_read_voc = load_edp_vocabulary(MACH_READ_FILE)
     non_prop_voc = load_edp_vocabulary(NON_PROP_FILE)
