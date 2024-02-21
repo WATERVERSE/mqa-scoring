@@ -34,6 +34,7 @@ def str_metric(val, g):
         if val.find(ns) != -1:
             met_str = val_str.replace(ns, prefix + ":")
             return met_str
+    return val_str
 
 
 def load_edp_vocabulary(file):
