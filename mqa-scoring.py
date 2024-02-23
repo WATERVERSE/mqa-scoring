@@ -155,7 +155,7 @@ def main():
                              "dct:publisher", "dct:accessRights", "dct:issued", "dct:modified", "dct:rights", 
                              "dcat:byteSize"]
     all_evaluated_metadata = list(result_details.keys())
-    not_evaluated_metadata = all_supported_metadata - all_evaluated_metadata
+    not_evaluated_metadata = list(set(all_supported_metadata) - set(all_evaluated_metadata))
 
     # print('* dct:format & dcat:mediaType')
     # if f_res['result'] and m_res['result']:
