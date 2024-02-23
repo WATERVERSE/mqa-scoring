@@ -150,6 +150,13 @@ def main():
         result_details[met] = result_met
         weight += result_met['weight']
 
+    all_supported_metadata = ["dcat:accessURL", "dcat:downloadURL", "dcat:keyword", "dcat:theme", "dct:spatial",
+                             "dct:temporal", "dct:format", "dct:license", "dcat:contactPoint", "dcat:mediaType",
+                             "dct:publisher", "dct:accessRights", "dct:issued", "dct:modified", "dct:rights", 
+                             "dcat:byteSize"]
+    all_evaluated_metadata = list(result_details.keys())
+    not_evaluated_metadata = all_supported_metadata - all_evaluated_metadata
+
     # print('* dct:format & dcat:mediaType')
     # if f_res['result'] and m_res['result']:
     #     weight = weight + 10
@@ -165,6 +172,14 @@ def main():
             'details': {
                 'type': 'Property',
                 'value': result_details
+            },
+            'evaluatedMetadata': {
+                'type': 'Property',
+                'value': ','.join(all_evaluated_metadata)
+            },
+            'notEvaluatedMetadata': {
+                'type': 'Property',
+                'value': ','.join(not_evaluated_metadata)
             }
         }
     }
