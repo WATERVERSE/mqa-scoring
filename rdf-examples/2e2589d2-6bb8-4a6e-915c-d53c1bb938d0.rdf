@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:edp="https://europeandataportal.eu/voc#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:spdx="http://spdx.org/rdf/terms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcatap="http://data.europa.eu/r5r/"
+    xmlns:dqv="http://www.w3.org/ns/dqv#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <dcat:CatalogRecord rdf:about="http://data.europa.eu/88u/record/2e2589d2-6bb8-4a6e-915c-d53c1bb938d0">
+    <dqv:hasQualityMetadata rdf:resource="http://data.europa.eu/88u/metrics/2e2589d2-6bb8-4a6e-915c-d53c1bb938d0"/>
+    <dct:creator rdf:resource="http://piveau.io"/>
+    <foaf:primaryTopic>
+      <dcat:Dataset rdf:about="http://data.europa.eu/88u/dataset/2e2589d2-6bb8-4a6e-915c-d53c1bb938d0">
+        <dct:description xml:lang="ga-t-es-t0-mtec">Frasaíocht ó PAMPLONA AEROPUERTO stáisiún tar éis an tsamhail WeatherObserved NGSI-LD. Faisnéis a ullmhaítear trí úsáid a bhaint, i measc nithe eile, as an nGníomhaireacht Meitéareolaíochta Stáit. Frasaíocht ó PAMPLONA AEROPUERTO stáisiún tar éis an tsamhail WeatherObserved NGSI-LD.
+Faisnéis a ullmhaítear trí úsáid a bhaint, i measc nithe eile, as an nGníomhaireacht Meitéareolaíochta Stáit.</dct:description>
+        <dct:description xml:lang="et-t-es-t0-mtec">Sademed PAMPLONA AEROPUERTO jaama pärast WeatherObserved mudel NGSI-LD. Muu hulgas riiklikust meteoroloogiaametist saadud teabe põhjal. Sademed PAMPLONA AEROPUERTO jaama pärast WeatherObserved mudel NGSI-LD.
+Muu hulgas riiklikust meteoroloogiaametist saadud teabe põhjal.</dct:description>
+        <dct:title xml:lang="fi-t-es-t0-mtec">pamplona__airport_9263d_sateet</dct:title>
+        <dct:description xml:lang="bg-t-es-t0-mtec">Валежи от станция PAMPLONA AEROPUERTO по модела WeatherObserved на NGSI-LD. Информация, изготвена чрез използване, наред с другото, на информацията, получена от Държавната агенция по метеорология.</dct:description>
+        <dct:title xml:lang="uk-t-es-t0-mtec">Памплона__аеропорт_9263d_опади</dct:title>
+        <dct:description xml:lang="it-t-es-t0-mtec">Precipitazioni dalla stazione di PAMPLONA AEROPUERTO seguendo il modello WeatherObservato di NGSI-LD. Informazioni preparate utilizzando, tra l'altro, quelle ottenute dall'Agenzia meteorologica statale.</dct:description>
+        <dct:description xml:lang="fr-t-es-t0-mtec">Précipitations de la station PAMPLONA AEROPUERTO suivant le modèle WeatherObserved de NGSI-LD. Informations préparées en utilisant, entre autres, celles obtenues de l’Agence nationale de météorologie.</dct:description>
+        <dct:title xml:lang="sk-t-es-t0-mtec">pamplona__airport_9263d_zrážania</dct:title>
+        <dct:description xml:lang="sl-t-es-t0-mtec">Padavine iz postaje PAMPLONA AEROPUERTO po VremeObserved modelu NGSI-LD. Informacije, pripravljene na podlagi, med drugim, informacij, pridobljenih od državne meteorološke agencije.</dct:description>
+        <dct:title xml:lang="hu-t-es-t0-mtec">pamplona__airport_9263d_ csapadék</dct:title>
+        <dct:title xml:lang="pl-t-es-t0-mtec">pamplona__airport_9263d_precypacje</dct:title>
+        <dct:title xml:lang="pt-t-es-t0-mtec">pamplona__airport_9263d_precipitações</dct:title>
+        <dct:title>pamplona__aeropuerto_9263d_precipitations</dct:title>
+        <dct:description xml:lang="de-t-es-t0-mtec">Niederschlag von der Station PAMPLONA AEROPUERTO nach dem WeatherObserved-Modell der NGSI-LD. Informationen, die unter anderem mit Hilfe der State Meteorology Agency erstellt wurden.</dct:description>
+        <dct:title xml:lang="et-t-es-t0-mtec">pamplona__airport_9263d_ sademed</dct:title>
+        <dct:description xml:lang="nl-t-es-t0-mtec">Neerslag van PAMPLONA AEROPUERTO station volgens het WeatherObserved model van NGSI-LD. Informatie die is opgesteld met behulp van onder andere die verkregen van het State Meteorology Agency. Neerslag van PAMPLONA AEROPUERTO station volgens het WeatherObserved model van NGSI-LD.
+Informatie die is opgesteld met behulp van onder andere die verkregen van het State Meteorology Agency.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2023-01-14T10:37:33.399243</dct:modified>
+        <dct:title xml:lang="fr-t-es-t0-mtec">pamplona__airport_9263d_précipitations</dct:title>
+        <dct:title xml:lang="bg-t-es-t0-mtec">pamplona__airport_9263d_убежища</dct:title>
+        <dct:description xml:lang="sk-t-es-t0-mtec">Zrážky zo stanice PAMPLONA AEROPUERTO po WeatherObserved model NGSI-LD. Informácie pripravené okrem iného na základe informácií získaných od Štátnej meteorologickej agentúry.</dct:description>
+        <dct:identifier>2e2589d2-6bb8-4a6e-915c-d53c1bb938d0</dct:identifier>
+        <dct:description xml:lang="en-t-es-t0-mtec">Precipitation from PAMPLONA AEROPUERTO station following the WeatherObserved model of NGSI-LD. Information prepared using, among others, that obtained from the State Meteorology Agency.</dct:description>
+        <dct:title xml:lang="sl-t-es-t0-mtec">pamplona__airport_9263d_precipitacije</dct:title>
+        <dct:title xml:lang="hr-t-es-t0-mtec">pamplona__airport_9263d_precipitacije</dct:title>
+        <dct:title xml:lang="cs-t-es-t0-mtec">pamplona__airport_9263d_precipitace</dct:title>
+        <dct:spatial>
+          <dct:Location rdf:about="https://publications.europa.eu/resource/authority/country/ESP"/>
+        </dct:spatial>
+        <dct:description xml:lang="da-t-es-t0-mtec">Nedbør fra PAMPLONA AEROPUERTO station efter WeatherObserved model af NGSI-LD. Oplysninger udarbejdet ved hjælp af bl.a. oplysninger indhentet fra Statens Meteorologiagentur.</dct:description>
+        <dct:title xml:lang="it-t-es-t0-mtec">pamplona__airport_9263d_precipitations</dct:title>
+        <dct:title xml:lang="lt-t-es-t0-mtec">pamplona__airport_9263d_precipitations</dct:title>
+        <dct:title xml:lang="ro-t-es-t0-mtec">pamplona__airport_9263d_precipitations</dct:title>
+        <dct:title xml:lang="de-t-es-t0-mtec">pamplona__airport_9263d_ Niederschlag</dct:title>
+        <dct:title xml:lang="en-t-es-t0-mtec">pamplona__airport_9263d_precipitations</dct:title>
+        <dct:title xml:lang="nl-t-es-t0-mtec">pamplona__airport_9263d_precipitaties</dct:title>
+        <dct:description xml:lang="pt-t-es-t0-mtec">Precipitação da estação PAMPLONA AEROPUERTO seguindo o modelo WeatherObserved de NGSI-LD. Informações elaboradas a partir, entre outras, da Agência Estadual de Meteorologia.</dct:description>
+        <dct:title xml:lang="lv-t-es-t0-mtec">Pamplona__lidosta_9263d_precipitations</dct:title>
+        <dct:title xml:lang="mt-t-es-t0-mtec">pamplona__airport_9263d_preċipitazzjonijiet</dct:title>
+        <dct:description xml:lang="fi-t-es-t0-mtec">Saostuminen PAMPLONA AEROPUERTO -asemalta WeatherObserved -mallin NGSI-LD mukaisesti. Tiedot, jotka on laadittu käyttäen muun muassa valtion meteorologiavirastolta saatuja tietoja. Saostuminen PAMPLONA AEROPUERTO -asemalta WeatherObserved -mallin NGSI-LD mukaisesti.
+Tiedot, jotka on laadittu käyttäen muun muassa valtion meteorologiavirastolta saatuja tietoja.</dct:description>
+        <dct:title xml:lang="ga-t-es-t0-mtec">pamplona__airport_9263d_precipitations</dct:title>
+        <dct:description xml:lang="sv-t-es-t0-mtec">Nederbörd från PAMPLONA AEROPUERTO station efter WeatherObserved modell av NGSI-LD. Information som tagits fram med hjälp av bland annat den information som erhållits från Meteorology Agency.</dct:description>
+        <dct:temporal>
+          <dct:PeriodOfTime>
+            <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2022-01-01T00:00:00Z</dcat:startDate>
+            <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2032-01-01T00:00:00Z</dcat:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:description xml:lang="lv-t-es-t0-mtec">Nokrišņi no PAMPLONA AEROPUERTO stacijas pēc WeatherObserved modeli NGSI-LD. Informācija, kas sagatavota, izmantojot, cita starpā, no Valsts Meteoroloģijas aģentūras iegūto informāciju.</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2023-01-14T10:37:32.769857</dct:issued>
+        <dct:title xml:lang="el-t-es-t0-mtec">Παμπλόνα__αεροδρόμιο_9263d_κατακρημνίσεις</dct:title>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/b12a9eb9-cc7d-4d45-87cc-3cc7055db443">
+            <dcat:accessURL rdf:resource="https://broker-yoda.dit.upm.es/ngsi-ld/v1/entities/urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1"/>
+            <dct:description xml:lang="ro-t-es-t0-mtec">Observarea precipitațiilor din PAMPLONA AEROPUERTO</dct:description>
+            <dct:identifier>https://portal-yoda.dit.upm.es/dataset/2e2589d2-6bb8-4a6e-915c-d53c1bb938d0/resource/fb4a83d6-4650-41bd-9994-e0943ec81fb9</dct:identifier>
+            <dct:description xml:lang="lv-t-es-t0-mtec">PAMPLONA AEROPUERTO nokrišņu novērojums</dct:description>
+            <dct:description xml:lang="lt-t-es-t0-mtec">Kritulių stebėjimas PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="el-t-es-t0-mtec">Παρατήρηση βροχόπτωσης PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="mt-t-es-t0-mtec">Osservazzjoni ta’ preċipitazzjoni ta’ AEROPUERTO PAMPLONA</dct:description>
+            <dct:description xml:lang="da-t-es-t0-mtec">Nedbørsobservation af PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="sl-t-es-t0-mtec">Opazovanje padavin PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="sk-t-es-t0-mtec">Pozorovanie zrážok PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="cs-t-es-t0-mtec">Pozorování srážek PAMPLONA AEROPUERTO</dct:description>
+            <dct:title xml:lang="it-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="hr-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="uk-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="mt-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="sv-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="sl-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="ro-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title>urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="lt-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="nl-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="da-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="et-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="ga-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="el-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="pt-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="hu-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="fi-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="fr-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="cs-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="sk-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="lv-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="en-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="bg-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:description>Observación de precipitaciones de PAMPLONA  AEROPUERTO</dct:description>
+            <dct:description xml:lang="en-t-es-t0-mtec">Precipitation observation of PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="pl-t-es-t0-mtec">Obserwacja opadów w PAMPLONA AEROPUERTO</dct:description>
+            <dct:title xml:lang="de-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dct:title xml:lang="pl-t-es-t0-mtec">urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1</dct:title>
+            <dcat:downloadURL rdf:resource="https://broker-yoda.dit.upm.es/ngsi-ld/v1/entities/urn:ngsi-ld:WeatherObserved:AvgPrecipitation:9263D-1"/>
+            <dct:license>
+              <dct:LicenseDocument rdf:about="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+            </dct:license>
+            <dct:format>
+              <dct:MediaTypeOrExtent rdf:about="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+            </dct:format>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2022-01-01T00:00:00Z</dct:issued>
+            <dcatap:availability rdf:resource="http://data.europa.eu/r5r/availability/available"/>
+            <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2024-04-14T00:00:03.391489</dct:modified>
+            <dct:description xml:lang="pt-t-es-t0-mtec">Observação de precipitação de PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="fr-t-es-t0-mtec">Observation des précipitations de PAMPLONA AEROPUERTO</dct:description>
+            <dcat:mediaType>
+              <dct:MediaType rdf:about="https://www.iana.org/assignments/media-types/application/ld+json"/>
+            </dcat:mediaType>
+            <dct:description xml:lang="fi-t-es-t0-mtec">PAMPLONA AEROPUERTO -bakteerin saostushavainto</dct:description>
+            <dct:rights>
+              <dct:RightsStatement rdf:about="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+            </dct:rights>
+            <dct:description xml:lang="nl-t-es-t0-mtec">Neerslag observatie van PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="hr-t-es-t0-mtec">Opažanje taloženja lijeka PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="it-t-es-t0-mtec">Osservazione delle precipitazioni di PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="uk-t-es-t0-mtec">Спостереження опадів від PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="bg-t-es-t0-mtec">Наблюдение на валежите в PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="hu-t-es-t0-mtec">PAMPLONA AEROPUERTO csapadékmegfigyelése</dct:description>
+            <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >1313</dcat:byteSize>
+            <dct:description xml:lang="ga-t-es-t0-mtec">Breathnóireacht frasaíochta ar PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="de-t-es-t0-mtec">Niederschlagsbeobachtung von PAMPLONA AEROPUERTO</dct:description>
+            <dct:description xml:lang="et-t-es-t0-mtec">PAMPLONA AEROPUERTO sademete jälgimine</dct:description>
+            <dct:description xml:lang="sv-t-es-t0-mtec">Nederbördsobservation av PAMPLONA AEROPUERTO</dct:description>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <dct:description xml:lang="hr-t-es-t0-mtec">Padaline iz stanice PAMPLONA AEROPUERTO slijedeći WeatherObserved model NGSI-LD. Informacije pripremljene pomoću, među ostalim, podataka dobivenih od Državne meteorološke agencije. Padaline iz stanice PAMPLONA AEROPUERTO slijedeći WeatherObserved model NGSI-LD.
+Informacije pripremljene pomoću, među ostalim, podataka dobivenih od Državne meteorološke agencije.</dct:description>
+        <dct:description>Precipitaciones de la estación de PAMPLONA  AEROPUERTO siguiendo el modelo WeatherObserved de NGSI-LD. Información elaborada utilizando, entre otras, la obtenida de la Agencia Estatal de Meteorología.</dct:description>
+        <dcat:contactPoint>
+          <vcard:Kind rdf:about="https://yoda.dit.upm.es/">
+            <vcard:fn>yoda</vcard:fn>
+          </vcard:Kind>
+        </dcat:contactPoint>
+        <dct:description xml:lang="el-t-es-t0-mtec">Βροχόπτωση από το σταθμό PAMPLONA AEROPUERTO ακολουθώντας το WeatherObserved μοντέλο NGSI-LD. Πληροφορίες που καταρτίζονται με χρήση, μεταξύ άλλων, των πληροφοριών που λαμβάνονται από την Κρατική Μετεωρολογική Υπηρεσία.</dct:description>
+        <dct:description xml:lang="pl-t-es-t0-mtec">Opady ze stacji PAMPLONA AEROPUERTO według WeatherObserwowany model NGSI-LD. Informacje przygotowane z wykorzystaniem m.in. uzyskanych od Państwowej Agencji Meteorologicznej.</dct:description>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <dct:publisher>
+          <foaf:Agent rdf:about="https://portal-yoda.dit.upm.es/organization/6506de93-daa7-45c4-bbb1-c6100d5f618c">
+            <foaf:name>meteorologia</foaf:name>
+            <dct:type>
+              <skos:Concept rdf:about="http://purl.org/adms/publishertype/Academia-ScientificOrganisation"/>
+            </dct:type>
+          </foaf:Agent>
+        </dct:publisher>
+        <dct:description xml:lang="hu-t-es-t0-mtec">Csapadék PAMPLONA AEROPUERTO állomásról az NGSI-LD WeatherObserved modelljét követve. Többek között az Állami Meteorológiai Ügynökség felhasználásával készített információk.</dct:description>
+        <dct:description xml:lang="lt-t-es-t0-mtec">Krituliai iš PAMPLONA AEROPUERTO stoties pagal WeatherObserved modelį NGSI-LD. Informacija, parengta naudojant, be kita ko, iš Valstybinės meteorologijos agentūros gautą informaciją.</dct:description>
+        <dcat:theme>
+          <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/ENVI"/>
+        </dcat:theme>
+        <dct:title xml:lang="da-t-es-t0-mtec">pamplona__airport_9263d_Udfældninger</dct:title>
+        <dct:description xml:lang="mt-t-es-t0-mtec">Preċipitazzjoni mill-istazzjon PAMPLONA AEROPUERTO wara l-mudell ta’ WeatherObserved ta’ NGSI-LD. Informazzjoni ppreparata bl-użu, fost l-oħrajn, ta’ dik miksuba mill-Aġenzija tal-Meteoroloġija tal-Istat.</dct:description>
+        <dcat:keyword>tiempo</dcat:keyword>
+        <dct:description xml:lang="uk-t-es-t0-mtec">Опади від станції PAMPLONA AEROPUERTO слідують моделі WeatherObserved моделі NGSI-LD. Інформація, підготовлена з використанням, серед іншого, отриманої від Державного метеорологічного агентства.</dct:description>
+        <dcat:landingPage rdf:resource="https://yoda.dit.upm.es/"/>
+        <dct:description xml:lang="cs-t-es-t0-mtec">Srážky ze stanice PAMPLONA AEROPUERTO podle WeatherObserved modelu NGSI-LD. Informace připravené mimo jiné za použití informací získaných od Státní meteorologické agentury.</dct:description>
+        <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+        <dct:description xml:lang="ro-t-es-t0-mtec">Precipitații de la stația PAMPLONA AEROPUERTO după modelul WeatherObserved al NGSI-LD. Informații pregătite folosind, printre altele, cele obținute de la Agenția de Meteorologie de Stat.</dct:description>
+        <dct:title xml:lang="sv-t-es-t0-mtec">pamplona__airport_9263d_utfällningar</dct:title>
+      </dcat:Dataset>
+    </foaf:primaryTopic>
+    <spdx:checksum>
+      <spdx:Checksum>
+        <spdx:checksumValue>653e179afe2e29337154f0dfa1ad831e</spdx:checksumValue>
+        <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
+      </spdx:Checksum>
+    </spdx:checksum>
+    <edp:transStatus rdf:resource="https://europeandataportal.eu/voc#TransCompleted"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-01-22T05:00:03Z</dct:issued>
+    <edp:originalLanguage>es</edp:originalLanguage>
+    <edp:transReceived rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-01-23T22:46:31Z</edp:transReceived>
+    <dct:identifier>2e2589d2-6bb8-4a6e-915c-d53c1bb938d0</dct:identifier>
+    <edp:transIssued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-01-22T05:00:03Z</edp:transIssued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-04-14T05:00:03Z</dct:modified>
+  </dcat:CatalogRecord>
+</rdf:RDF>

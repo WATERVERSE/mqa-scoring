@@ -43,7 +43,7 @@ def load_edp_vocabulary(file):
 def edp_validator(file, weight):
   print('* SHACL validation')
   try:
-    rdfFile = open(file, mode="r", encoding="utf8")
+    rdfFile = open(file, mode="r", encoding="utf-8")
   except Exception as e:
     raise SystemExit(e)
   with rdfFile:

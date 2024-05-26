@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:spdx="http://spdx.org/rdf/terms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://data.europa.eu/s1n/statdcat-ap/"
+    xmlns:schema="http://schema.org/"
+    xmlns:j.1="http://www.w3.org/2004/02/skos/"
+    xmlns:edp="https://europeandataportal.eu/voc#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dqv="http://www.w3.org/ns/dqv#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.2="http://purl.org/linked-data/cube#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <dcat:CatalogRecord rdf:about="http://data.europa.eu/88u/record/o4jxju2jgbnwrakwlnog">
+    <edp:originalLanguage>en</edp:originalLanguage>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-02-15T06:00:18Z</dct:issued>
+    <dct:identifier>o4jxju2jgBNWraKwlNOg</dct:identifier>
+    <spdx:checksum>
+      <spdx:Checksum>
+        <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
+        <spdx:checksumValue>d4a25790ebbd72bbd6fd67dbe7288190</spdx:checksumValue>
+      </spdx:Checksum>
+    </spdx:checksum>
+    <edp:transReceived rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-10-20T03:03:12Z</edp:transReceived>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-05-25T17:01:11Z</dct:modified>
+    <edp:transStatus rdf:resource="https://europeandataportal.eu/voc#TransCompleted"/>
+    <foaf:primaryTopic>
+      <dcat:Dataset rdf:about="http://data.europa.eu/88u/dataset/o4jxju2jgbnwrakwlnog">
+        <dct:title xml:lang="hu-t-en-t0-mtec">Cégnyilvántartási és csődindex NACE Rev.2 tevékenység szerint – havi adatok</dct:title>
+        <dct:title xml:lang="sk-t-en-t0-mtec">Index registrácie podnikov a konkurzu podľa činnosti NACE Rev.2 – mesačné údaje</dct:title>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:about="http://purl.org/dc/terms/PeriodOfTime/3169a64b-f3b3-4920-b709-b32c20b97678">
+            <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2024-04-30</dcat:endDate>
+            <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2015-01-01</dcat:startDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <j.0:statUnitMeasure>
+          <skos:Concept rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/INDIC_BT?code=BKRT"/>
+        </j.0:statUnitMeasure>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2024-05-25</dct:modified>
+        <dct:description xml:lang="en">Business registration and bankruptcy index by NACE Rev.2 activity - monthly data</dct:description>
+        <j.0:dimension>
+          <j.2:DimensionProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/NACE_R2"/>
+        </j.0:dimension>
+        <dct:title xml:lang="fi-t-en-t0-mtec">Yritysten rekisteröinti- ja konkurssi-indeksi NACE Rev. 2:n toimialan mukaan – kuukausittaiset tiedot</dct:title>
+        <dct:description xml:lang="bg-t-en-t0-mtec">Индекс за регистрация и несъстоятелност на предприятията по дейности на NACE Rev.2 — месечни данни</dct:description>
+        <j.0:statUnitMeasure>
+          <skos:Concept rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/UNIT?code=I15"/>
+        </j.0:statUnitMeasure>
+        <dct:title xml:lang="sl-t-en-t0-mtec">Indeks registracije in stečaja podjetij po dejavnostih NACE Rev. 2 – mesečni podatki</dct:title>
+        <j.0:statUnitMeasure>
+          <skos:Concept rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/UNIT?code=PCH_SM"/>
+        </j.0:statUnitMeasure>
+        <dct:description xml:lang="sk-t-en-t0-mtec">Index registrácie podnikov a konkurzu podľa činnosti NACE Rev.2 – mesačné údaje</dct:description>
+        <dct:title xml:lang="bg-t-en-t0-mtec">Индекс за регистрация и несъстоятелност на предприятията по дейности на NACE Rev.2 — месечни данни</dct:title>
+        <dct:title xml:lang="es-t-en-t0-mtec">Índice de registro de empresas y quiebra por actividad de la NACE Rev.2 — datos mensuales</dct:title>
+        <dct:description xml:lang="hr-t-en-t0-mtec">Registracijski i stečajni indeks poduzeća prema djelatnosti NACE Rev.2 – mjesečni podaci</dct:description>
+        <dct:description xml:lang="fr">Indice des immatriculations et faillites d’entreprises par activité NACE rév. 2 - données mensuelles</dct:description>
+        <dct:title xml:lang="uk-t-en-t0-mtec">Індекс реєстрації та банкрутства бізнесу за діяльністю КВЕД Rev.2 - щомісячні дані</dct:title>
+        <dcat:keyword>GEO</dcat:keyword>
+        <dct:description xml:lang="de">Index der Unternehmenseintragungen und - insolvenzen nach NACE Rev.2 Wirtschaftszweige, monatliche Daten</dct:description>
+        <dct:description xml:lang="cs-t-en-t0-mtec">Index registrace podniků a úpadku podle činnosti NACE Rev. 2 – měsíční údaje</dct:description>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/be700704-91b4-42e5-b025-12386410b233">
+            <dct:title xml:lang="sv-t-en-t0-mtec">Ladda ner dataset i SDMX-CSV-format</dct:title>
+            <dct:description xml:lang="lt-t-en-t0-mtec">Atsisiųsti duomenų rinkinį SDMX-CSV formatu</dct:description>
+            <dct:title xml:lang="cs-t-en-t0-mtec">Stáhnout datovou sadu ve formátu SDMX-CSV</dct:title>
+            <dct:description xml:lang="sv-t-en-t0-mtec">Ladda ner dataset i SDMX-CSV-format</dct:description>
+            <dct:title xml:lang="de-t-en-t0-mtec">Datensatz im SDMX-CSV-Format herunterladen</dct:title>
+            <dct:title xml:lang="ga-t-en-t0-mtec">Íoslódáil tacar sonraí i bhformáid SDMX-CSV</dct:title>
+            <dct:format>
+              <dct:MediaTypeOrExtent rdf:about="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+            </dct:format>
+            <dct:description xml:lang="de-t-en-t0-mtec">Datensatz im SDMX-CSV-Format herunterladen</dct:description>
+            <dct:description xml:lang="et-t-en-t0-mtec">Laadige alla andmekogum SDMX-CSV formaadis</dct:description>
+            <dct:title xml:lang="uk-t-en-t0-mtec">Завантажити набір даних у форматі SDMX-CSV</dct:title>
+            <dct:title xml:lang="it-t-en-t0-mtec">Scarica set di dati in formato SDMX-CSV</dct:title>
+            <dcat:accessURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=SDMX-CSV&amp;compressed=true"/>
+            <dct:title xml:lang="fr-t-en-t0-mtec">Télécharger l’ensemble de données au format SDMX-CSV</dct:title>
+            <dct:compressformat>
+              <dct:MediaTypeOrExtent rdf:about="http://publications.europa.eu/resource/authority/file-type/GZIP"/>
+            </dct:compressformat>
+            <dct:title xml:lang="sl-t-en-t0-mtec">Prenos nabora podatkov v formatu SDMX-CSV</dct:title>
+            <dct:title xml:lang="lt-t-en-t0-mtec">Atsisiųskite duomenų rinkinį SDMX-CSV formatu</dct:title>
+            <dct:title xml:lang="fi-t-en-t0-mtec">Lataa datajoukko SDMX-CSV-muodossa</dct:title>
+            <dct:title xml:lang="pl-t-en-t0-mtec">Pobierz zestaw danych w formacie SDMX-CSV</dct:title>
+            <dct:title xml:lang="hr-t-en-t0-mtec">Preuzimanje skupa podataka u SDMX-CSV formatu</dct:title>
+            <dct:description xml:lang="fi-t-en-t0-mtec">Lataa datasetti SDMX-CSV-muodossa</dct:description>
+            <dct:title xml:lang="el-t-en-t0-mtec">Κατεβάστε το σύνολο δεδομένων σε μορφή SDMX-CSV</dct:title>
+            <dct:description xml:lang="da-t-en-t0-mtec">Download datasæt i SDMX-CSV-format</dct:description>
+            <dct:title xml:lang="mt-t-en-t0-mtec">Niżżel is-sett tad-data fil-format SDMX-CSV</dct:title>
+            <dct:identifier>https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=SDMX-CSV&amp;compressed=true</dct:identifier>
+            <dct:description xml:lang="lv-t-en-t0-mtec">Lejupielādēt datu kopu SDMX-CSV formātā</dct:description>
+            <dct:title xml:lang="et-t-en-t0-mtec">Andmestiku allalaadimine SDMX-CSV-vormingus</dct:title>
+            <dct:title xml:lang="pt-t-en-t0-mtec">Transferir conjunto de dados no formato SDMX-CSV</dct:title>
+            <dct:description xml:lang="nl-t-en-t0-mtec">Dataset downloaden in SDMX-CSV-formaat</dct:description>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
+            <dct:description xml:lang="sk-t-en-t0-mtec">Sťahovanie dát vo formáte SDMX-CSV</dct:description>
+            <dct:description xml:lang="mt-t-en-t0-mtec">Niżżel is-sett tad-data fil-format SDMX-CSV</dct:description>
+            <dct:description xml:lang="bg-t-en-t0-mtec">Изтегляне на набор от данни в SDMX-CSV формат</dct:description>
+            <dct:title xml:lang="nl-t-en-t0-mtec">Download dataset in SDMX-CSV-formaat</dct:title>
+            <dct:title xml:lang="hu-t-en-t0-mtec">Adatkészlet letöltése SDMX-CSV formátumban</dct:title>
+            <dct:description xml:lang="ro-t-en-t0-mtec">Descărcați setul de date în format SDMX-CSV</dct:description>
+            <dct:description xml:lang="cs-t-en-t0-mtec">Stáhněte si datový soubor ve formátu SDMX-CSV</dct:description>
+            <dct:title xml:lang="ro-t-en-t0-mtec">Descărcați setul de date în format SDMX-CSV</dct:title>
+            <dct:description xml:lang="pl-t-en-t0-mtec">Pobierz zestaw danych w formacie SDMX-CSV</dct:description>
+            <dct:description xml:lang="es-t-en-t0-mtec">Descargar el conjunto de datos en formato SDMX-CSV</dct:description>
+            <dct:title xml:lang="da-t-en-t0-mtec">Download datasæt i SDMX-CSV format</dct:title>
+            <dct:description xml:lang="sl-t-en-t0-mtec">Prenos nabora podatkov v formatu SDMX-CSV</dct:description>
+            <dct:description xml:lang="hu-t-en-t0-mtec">Adatkészlet letöltése SDMX-CSV formátumban</dct:description>
+            <dct:title xml:lang="es-t-en-t0-mtec">Descargar conjunto de datos en formato SDMX-CSV</dct:title>
+            <dct:title xml:lang="bg-t-en-t0-mtec">Изтегляне на набор от данни във формат SDMX-CSV</dct:title>
+            <dct:title xml:lang="lv-t-en-t0-mtec">Lejupielādējiet datu kopu SDMX-CSV formātā</dct:title>
+            <dct:title xml:lang="en">Download dataset in SDMX-CSV format</dct:title>
+            <dct:description xml:lang="it-t-en-t0-mtec">Scarica il set di dati in formato SDMX-CSV</dct:description>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE"/>
+            <dct:description xml:lang="pt-t-en-t0-mtec">Baixe o conjunto de dados no formato SDMX-CSV</dct:description>
+            <dct:description xml:lang="el-t-en-t0-mtec">Λήψη συνόλου δεδομένων σε μορφή SDMX-CSV</dct:description>
+            <dct:description xml:lang="hr-t-en-t0-mtec">Preuzimanje skup podataka u SDMX-CSV formatu</dct:description>
+            <dct:rights>
+              <dct:RightsStatement rdf:about="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+            </dct:rights>
+            <dct:title xml:lang="sk-t-en-t0-mtec">Stiahnuť súbor údajov vo formáte SDMX-CSV</dct:title>
+            <dct:license>
+              <dct:LicenseDocument rdf:about="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+            </dct:license>
+            <dct:description xml:lang="fr-t-en-t0-mtec">Télécharger l’ensemble de données au format SDMX-CSV</dct:description>
+            <dct:description xml:lang="uk-t-en-t0-mtec">Завантажити набір даних у форматі SDMX-CSV</dct:description>
+            <dct:description xml:lang="ga-t-en-t0-mtec">Íoslódáil tacar sonraí i bhformáid SDMX-CSV</dct:description>
+            <dcat:downloadURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=SDMX-CSV&amp;compressed=true"/>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/ESP"/>
+        </dct:spatial>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/HUN"/>
+        </dct:spatial>
+        <dct:publisher>
+          <foaf:Agent rdf:about="http://publications.europa.eu/resource/authority/corporate-body/ESTAT"/>
+        </dct:publisher>
+        <dct:title xml:lang="pt-t-en-t0-mtec">Índice de registo de empresas e falências por atividade da NACE Rev.2 — dados mensais</dct:title>
+        <j.0:dimension>
+          <j.2:DimensionProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/GEO"/>
+        </j.0:dimension>
+        <dct:description xml:lang="pt-t-en-t0-mtec">Índice de registo de empresas e falências por atividade da NACE Rev.2 — dados mensais</dct:description>
+        <dct:description xml:lang="nl-t-en-t0-mtec">Bedrijfsregistratie en faillissementsindex naar NACE Rev.2-activiteit — maandelijkse gegevens</dct:description>
+        <dct:description xml:lang="it-t-en-t0-mtec">Indice di registrazione e fallimento delle imprese per attività NACE Rev. 2 — dati mensili</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/POL"/>
+        </dct:spatial>
+        <j.0:dimension>
+          <j.2:DimensionProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/S_ADJ"/>
+        </j.0:dimension>
+        <dct:title xml:lang="ga-t-en-t0-mtec">Innéacs clárúcháin gnó agus féimheachta de réir ghníomhaíocht NACE Rev.2 — sonraí míosúla</dct:title>
+        <dct:description xml:lang="es-t-en-t0-mtec">Índice de registro de empresas y quiebra por actividad de la NACE Rev.2 — datos mensuales</dct:description>
+        <dct:title xml:lang="nl-t-en-t0-mtec">Bedrijfsregistratie en faillissementsindex naar NACE Rev.2-activiteit — maandelijkse gegevens</dct:title>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/f80a954b-479d-4a2c-80c1-f604d73c994f">
+            <dct:title xml:lang="pl-t-en-t0-mtec">Pobierz zestaw danych w formacie SDMX 2.1</dct:title>
+            <dct:description xml:lang="da-t-en-t0-mtec">Download datasæt i SDMX 2.1 format</dct:description>
+            <dct:description xml:lang="et-t-en-t0-mtec">Laadige alla andmekogum SDMX 2.1 formaadis</dct:description>
+            <dct:title xml:lang="de-t-en-t0-mtec">Datensatz im SDMX 2.1-Format herunterladen</dct:title>
+            <dct:description xml:lang="pt-t-en-t0-mtec">Baixar conjunto de dados no formato SDMX 2.1</dct:description>
+            <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+            <dct:description xml:lang="sv-t-en-t0-mtec">Ladda ner dataset i SDMX 2.1-format</dct:description>
+            <dct:description xml:lang="lv-t-en-t0-mtec">Lejupielādēt datu kopu SDMX 2.1 formātā</dct:description>
+            <dct:description xml:lang="es-t-en-t0-mtec">Descargar el conjunto de datos en formato SDMX 2.1</dct:description>
+            <dct:description xml:lang="bg-t-en-t0-mtec">Изтегляне на набор от данни във формат SDMX 2.1</dct:description>
+            <dct:title xml:lang="sv-t-en-t0-mtec">Ladda ner dataset i SDMX 2.1-format</dct:title>
+            <dct:title xml:lang="en">Download dataset in SDMX 2.1 format</dct:title>
+            <dct:title xml:lang="et-t-en-t0-mtec">Andmestiku allalaadimine SDMX 2.1 formaadis</dct:title>
+            <dct:title xml:lang="fr-t-en-t0-mtec">Télécharger l’ensemble de données au format SDMX 2.1</dct:title>
+            <dct:description xml:lang="ga-t-en-t0-mtec">Íoslódáil tacar sonraí i bhformáid SDMX 2.1</dct:description>
+            <dct:title xml:lang="bg-t-en-t0-mtec">Изтегляне на набор от данни във формат SDMX 2.1</dct:title>
+            <dct:description xml:lang="lt-t-en-t0-mtec">Atsisiųsti duomenų rinkinį SDMX 2.1 formatu</dct:description>
+            <dct:description xml:lang="fr-t-en-t0-mtec">Télécharger l’ensemble de données au format SDMX 2.1</dct:description>
+            <dct:description xml:lang="uk-t-en-t0-mtec">Завантажити набір даних у форматі SDMX 2.1</dct:description>
+            <dct:title xml:lang="nl-t-en-t0-mtec">Download dataset in SDMX 2.1 formaat</dct:title>
+            <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+            <dct:description xml:lang="mt-t-en-t0-mtec">Niżżel is-sett tad-data f’format SDMX 2.1</dct:description>
+            <dct:description xml:lang="sl-t-en-t0-mtec">Prenos nabora podatkov v formatu SDMX 2.1</dct:description>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE"/>
+            <dcat:downloadURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=sdmx_2.1_structured&amp;compressed=true"/>
+            <dct:title xml:lang="ga-t-en-t0-mtec">Íoslódáil tacar sonraí i bhformáid SDMX 2.1</dct:title>
+            <dct:description xml:lang="hu-t-en-t0-mtec">Adatkészlet letöltése SDMX 2.1 formátumban</dct:description>
+            <dct:title xml:lang="hu-t-en-t0-mtec">Adatkészlet letöltése SDMX 2.1 formátumban</dct:title>
+            <dct:description xml:lang="hr-t-en-t0-mtec">Preuzimanje skup podataka u SDMX 2.1 formatu</dct:description>
+            <dct:title xml:lang="sk-t-en-t0-mtec">Stiahnuť súbor údajov vo formáte SDMX 2.1</dct:title>
+            <dct:description xml:lang="el-t-en-t0-mtec">Κατεβάστε το σύνολο δεδομένων σε μορφή SDMX 2.1</dct:description>
+            <dct:description xml:lang="nl-t-en-t0-mtec">Download dataset in SDMX 2.1 formaat</dct:description>
+            <dct:description xml:lang="it-t-en-t0-mtec">Scarica il set di dati in formato SDMX 2.1</dct:description>
+            <dct:title xml:lang="es-t-en-t0-mtec">Descargar conjunto de datos en formato SDMX 2.1</dct:title>
+            <dct:title xml:lang="el-t-en-t0-mtec">Κατεβάστε το σύνολο δεδομένων σε μορφή SDMX 2.1</dct:title>
+            <dct:compressformat rdf:resource="http://publications.europa.eu/resource/authority/file-type/GZIP"/>
+            <dct:title xml:lang="ro-t-en-t0-mtec">Descărcați setul de date în format SDMX 2.1</dct:title>
+            <dct:description xml:lang="fi-t-en-t0-mtec">Lataa datasetti SDMX 2.1 -muodossa</dct:description>
+            <dct:description xml:lang="de-t-en-t0-mtec">Datensatz im SDMX 2.1 Format herunterladen</dct:description>
+            <dct:description xml:lang="sk-t-en-t0-mtec">Sťahovanie dát vo formáte SDMX 2.1</dct:description>
+            <dct:description xml:lang="cs-t-en-t0-mtec">Stáhněte si datový soubor ve formátu SDMX 2.1</dct:description>
+            <dct:title xml:lang="lt-t-en-t0-mtec">Atsisiųskite duomenų rinkinį SDMX 2.1 formatu</dct:title>
+            <dct:title xml:lang="fi-t-en-t0-mtec">Lataa datajoukko SDMX 2.1 -muodossa</dct:title>
+            <dct:title xml:lang="hr-t-en-t0-mtec">Preuzimanje skup podataka u SDMX 2.1 formatu</dct:title>
+            <dcat:accessURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=sdmx_2.1_structured&amp;compressed=true"/>
+            <dct:title xml:lang="cs-t-en-t0-mtec">Stáhnout datovou sadu ve formátu SDMX 2.1</dct:title>
+            <dct:title xml:lang="sl-t-en-t0-mtec">Prenos nabora podatkov v formatu SDMX 2.1</dct:title>
+            <dct:title xml:lang="uk-t-en-t0-mtec">Завантажити набір даних у форматі SDMX 2.1</dct:title>
+            <dct:title xml:lang="it-t-en-t0-mtec">Scarica il set di dati in formato SDMX 2.1</dct:title>
+            <dct:description xml:lang="pl-t-en-t0-mtec">Pobierz zestaw danych w formacie SDMX 2.1</dct:description>
+            <dct:description xml:lang="ro-t-en-t0-mtec">Descărcați setul de date în format SDMX 2.1</dct:description>
+            <dct:title xml:lang="lv-t-en-t0-mtec">Lejupielādējiet datu kopu SDMX 2.1 formātā</dct:title>
+            <dct:title xml:lang="mt-t-en-t0-mtec">Niżżel is-sett tad-data fil-format SDMX 2.1</dct:title>
+            <dct:format>
+              <dct:MediaTypeOrExtent rdf:about="http://publications.europa.eu/resource/authority/file-type/XML"/>
+            </dct:format>
+            <dct:title xml:lang="da-t-en-t0-mtec">Download datasæt i SDMX 2.1 format</dct:title>
+            <dct:title xml:lang="pt-t-en-t0-mtec">Transferir conjunto de dados no formato SDMX 2.1</dct:title>
+            <dct:identifier>https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=sdmx_2.1_structured&amp;compressed=true</dct:identifier>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <dct:description xml:lang="sl-t-en-t0-mtec">Indeks registracije in stečaja podjetij po dejavnostih NACE Rev. 2 – mesečni podatki</dct:description>
+        <dct:title xml:lang="mt-t-en-t0-mtec">Indiċi tar-reġistrazzjoni u l-falliment tan-negozju skont l-attività tan-NACE Rev.2 — data ta’ kull xahar</dct:title>
+        <dct:description xml:lang="lt-t-en-t0-mtec">Įmonių registravimo ir bankroto indeksas pagal NACE 2 red. veiklos rūšis – mėnesio duomenys</dct:description>
+        <j.0:attribute>
+          <j.2:AttributeProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/OBS_FLAG"/>
+        </j.0:attribute>
+        <dct:description xml:lang="et-t-en-t0-mtec">Ettevõtete registreerimise ja pankrotiindeks NACE Rev.2 tegevusala järgi – kuuandmed</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/BGR"/>
+        </dct:spatial>
+        <dct:description xml:lang="uk-t-en-t0-mtec">Індекс реєстрації та банкрутства бізнесу за діяльністю КВЕД Rev.2 - щомісячні дані</dct:description>
+        <dct:title xml:lang="da-t-en-t0-mtec">Erhvervsregistrerings- og konkursindeks efter aktivitet i NACE rev. 2 — månedlige data</dct:title>
+        <j.0:statUnitMeasure>
+          <skos:Concept rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/UNIT?code=I21"/>
+        </j.0:statUnitMeasure>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/SVN"/>
+        </dct:spatial>
+        <dct:description xml:lang="lv-t-en-t0-mtec">Uzņēmumu reģistrācijas un bankrota indekss pēc NACE 2. red. darbības — mēneša dati</dct:description>
+        <dct:title xml:lang="en">Business registration and bankruptcy index by NACE Rev.2 activity - monthly data</dct:title>
+        <dcat:keyword>S_ADJ</dcat:keyword>
+        <j.0:dimension>
+          <j.2:DimensionProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/FREQ"/>
+        </j.0:dimension>
+        <dct:type>
+          <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL"/>
+        </dct:type>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/FRA"/>
+        </dct:spatial>
+        <dct:description xml:lang="el-t-en-t0-mtec">Δείκτης καταχώρισης επιχειρήσεων και πτώχευσης με βάση τη δραστηριότητα της NACE αναθ. 2 — μηνιαία στοιχεία</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/CYP"/>
+        </dct:spatial>
+        <dcat:keyword>TIME_PERIOD</dcat:keyword>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/DNK"/>
+        </dct:spatial>
+        <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+        <dct:title xml:lang="pl-t-en-t0-mtec">Wskaźnik rejestracji i upadłości według działalności NACE Rev.2 – dane miesięczne</dct:title>
+        <foaf:page>
+          <foaf:Document rdf:about="https://ec.europa.eu/eurostat/databrowser/product/page/sts_rb_m">
+            <dct:title xml:lang="en">More information on Eurostat Website</dct:title>
+            <dct:title xml:lang="fr">Plus d'information sur le site web d'Eurostat</dct:title>
+            <schema:url xml:lang="en">https://ec.europa.eu/eurostat/databrowser/product/page/sts_rb_m</schema:url>
+            <dct:type>
+              <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/documentation-type/WEBPAGE_RELATED"/>
+            </dct:type>
+            <dct:title xml:lang="de">Mehr Informationen auf der Eurostat Website</dct:title>
+          </foaf:Document>
+        </foaf:page>
+        <dct:title xml:lang="cs-t-en-t0-mtec">Index registrace podniků a úpadku podle činnosti NACE Rev. 2 – měsíční údaje</dct:title>
+        <dcat:theme>
+          <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+        </dcat:theme>
+        <dct:description xml:lang="ro-t-en-t0-mtec">Indicele de înregistrare a întreprinderilor și faliment pe activități NACE Rev.2 – date lunare</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/BEL"/>
+        </dct:spatial>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2023-02-14</dct:issued>
+        <j.0:statUnitMeasure>
+          <skos:Concept rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/UNIT?code=PCH_PRE"/>
+        </j.0:statUnitMeasure>
+        <dct:identifier>sts_rb_m</dct:identifier>
+        <dct:description xml:lang="mt-t-en-t0-mtec">Indiċi tar-reġistrazzjoni u l-falliment tan-negozju skont l-attività tan-NACE Rev.2 — data ta’ kull xahar</dct:description>
+        <dcat:keyword>INDIC_BT</dcat:keyword>
+        <dct:title xml:lang="et-t-en-t0-mtec">Ettevõtete registreerimise ja pankrotiindeks NACE Rev.2 tegevusala järgi – kuuandmed</dct:title>
+        <dct:title xml:lang="el-t-en-t0-mtec">Δείκτης καταχώρισης επιχειρήσεων και πτώχευσης με βάση τη δραστηριότητα της NACE αναθ. 2 — μηνιαία στοιχεία</dct:title>
+        <dct:title xml:lang="de">Index der Unternehmenseintragungen und - insolvenzen nach NACE Rev.2 Wirtschaftszweige, monatliche Daten</dct:title>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/0e7c320c-03de-4faf-9c8e-63f47810d0e1">
+            <dct:title xml:lang="en">Table, graphs and map visualizations are also available.</dct:title>
+            <dct:title xml:lang="sk-t-en-t0-mtec">K dispozícii sú aj tabuľky, grafy a mapové vizualizácie.</dct:title>
+            <dct:title xml:lang="de">Tabellen, Grafiken und geografische Darstellungen sind ebenfalls verfügbar.</dct:title>
+            <dct:title xml:lang="it-t-en-t0-mtec">Sono disponibili anche tabelle, grafici e visualizzazioni di mappe.</dct:title>
+            <dct:title xml:lang="fr">Des visualisations sous forme de tableau, graphique et carte géographique sont aussi disponibles.</dct:title>
+            <dct:title xml:lang="pt-t-en-t0-mtec">Tabelas, gráficos e visualizações de mapas também estão disponíveis.</dct:title>
+            <dct:title xml:lang="mt-t-en-t0-mtec">It-tabella, il-graffs u l-viżwalizzazzjonijiet tal-mappa huma disponibbli wkoll.</dct:title>
+            <dct:title xml:lang="fi-t-en-t0-mtec">Saatavilla on myös taulukoita, kaavioita ja karttavisualisointeja.</dct:title>
+            <dct:title xml:lang="cs-t-en-t0-mtec">K dispozici jsou také tabulky, grafy a vizualizace map.</dct:title>
+            <dct:identifier>https://ec.europa.eu/eurostat/databrowser/view/sts_rb_m/default/table</dct:identifier>
+            <dct:title xml:lang="sv-t-en-t0-mtec">Tabell, grafer och kartvisualiseringar finns också tillgängliga.</dct:title>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/VISUALIZATION"/>
+            <dct:title xml:lang="lt-t-en-t0-mtec">Taip pat galima rasti lentelę, grafikus ir žemėlapių vizualizacijas.</dct:title>
+            <dct:title xml:lang="uk-t-en-t0-mtec">Також доступні таблиці, графіки та візуалізації карт.</dct:title>
+            <dct:title xml:lang="hr-t-en-t0-mtec">Dostupne su i tablice, grafikoni i prikazi karata.</dct:title>
+            <dct:title xml:lang="hu-t-en-t0-mtec">Táblázatok, grafikonok és térképvizualizációk is rendelkezésre állnak.</dct:title>
+            <dct:title xml:lang="bg-t-en-t0-mtec">Таблици, графики и визуализации на карти също са на разположение.</dct:title>
+            <dct:title xml:lang="pl-t-en-t0-mtec">Dostępne są również tabele, wykresy i wizualizacje map.</dct:title>
+            <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+            <dct:title xml:lang="sl-t-en-t0-mtec">Na voljo so tudi tabela, grafi in vizualizacije zemljevidov.</dct:title>
+            <dct:title xml:lang="el-t-en-t0-mtec">Διατίθενται επίσης πίνακες, γραφήματα και απεικονίσεις χαρτών.</dct:title>
+            <dct:title xml:lang="et-t-en-t0-mtec">Saadaval on ka tabel, graafikud ja kaardi visualiseerimine.</dct:title>
+            <dct:title xml:lang="ro-t-en-t0-mtec">Tabelul, graficele și vizualizările hărților sunt, de asemenea, disponibile.</dct:title>
+            <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html"/>
+            <dct:title xml:lang="ga-t-en-t0-mtec">Tá tábla, graif agus léirshamhlú léarscáile ar fáil freisin.</dct:title>
+            <dct:title xml:lang="da-t-en-t0-mtec">Tabel, grafer og kortvisualiseringer er også tilgængelige.</dct:title>
+            <dct:title xml:lang="lv-t-en-t0-mtec">Pieejamas arī tabulas, diagrammas un karšu vizualizācijas.</dct:title>
+            <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+            <dcat:accessURL rdf:resource="https://ec.europa.eu/eurostat/databrowser/view/sts_rb_m/default/table"/>
+            <dct:title xml:lang="es-t-en-t0-mtec">Tablas, gráficos y visualizaciones de mapas también están disponibles.</dct:title>
+            <dct:title xml:lang="nl-t-en-t0-mtec">Tabel, grafieken en kaartvisualisaties zijn ook beschikbaar.</dct:title>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <j.0:dimension>
+          <j.2:DimensionProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/INDIC_BT"/>
+        </j.0:dimension>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/HRV"/>
+        </dct:spatial>
+        <dct:description xml:lang="da-t-en-t0-mtec">Erhvervsregistrerings- og konkursindeks efter aktivitet i NACE rev. 2 — månedlige data</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/DEU"/>
+        </dct:spatial>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/LVA"/>
+        </dct:spatial>
+        <dct:title xml:lang="it-t-en-t0-mtec">Indice di registrazione e fallimento delle imprese per attività NACE Rev. 2 — dati mensili</dct:title>
+        <foaf:page>
+          <foaf:Document rdf:about="https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/sts_esms.sdmx.zip">
+            <dct:title xml:lang="en">ESMS metadata (Euro-SDMX Metadata structure) SDMX</dct:title>
+            <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+            <foaf:topic rdf:resource="https://ec.europa.eu/eurostat/databrowser/product/page/sts_rb_m"/>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+            <schema:url xml:lang="en">https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/sts_esms.sdmx.zip</schema:url>
+            <dct:type>
+              <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/documentation-type/DOCUMENTATION_MAIN"/>
+            </dct:type>
+          </foaf:Document>
+        </foaf:page>
+        <j.0:numSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1614</j.0:numSeries>
+        <dct:description xml:lang="sv-t-en-t0-mtec">Företagsregistrerings- och konkursindex efter näringsgren enligt Nace rev. 2 – månadsuppgifter</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/NLD"/>
+        </dct:spatial>
+        <dct:title xml:lang="sv-t-en-t0-mtec">Företagsregistrerings- och konkursindex efter näringsgren enligt Nace rev. 2 – månadsuppgifter</dct:title>
+        <j.0:statUnitMeasure>
+          <skos:Concept rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/INDIC_BT?code=REG"/>
+        </j.0:statUnitMeasure>
+        <dcat:keyword>UNIT</dcat:keyword>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/2042bfa1-fd53-4805-945b-2bf7fcd572c3">
+            <dct:description xml:lang="nl-t-en-t0-mtec">Dataset downloaden in TSV-formaat</dct:description>
+            <dct:description xml:lang="ga-t-en-t0-mtec">Íoslódáil tacar sonraí i bhformáid TSV</dct:description>
+            <dct:description xml:lang="da-t-en-t0-mtec">Download datasæt i TSV-format</dct:description>
+            <dct:title xml:lang="fi-t-en-t0-mtec">Lataa aineisto TSV-muodossa</dct:title>
+            <dct:title xml:lang="hr-t-en-t0-mtec">Preuzimanje skupa podataka u TSV formatu</dct:title>
+            <dct:description xml:lang="uk-t-en-t0-mtec">Завантажити набір даних у форматі TSV</dct:description>
+            <dct:description xml:lang="ro-t-en-t0-mtec">Descărcați setul de date în format TSV</dct:description>
+            <dct:title xml:lang="hu-t-en-t0-mtec">Adatkészlet letöltése TSV formátumban</dct:title>
+            <dct:title xml:lang="mt-t-en-t0-mtec">Niżżel is-sett tad-dejta f’format TSV</dct:title>
+            <dct:description xml:lang="sv-t-en-t0-mtec">Ladda ner dataset i TSV-format</dct:description>
+            <dct:description xml:lang="sl-t-en-t0-mtec">Prenos nabora podatkov v formatu TSV</dct:description>
+            <dct:description xml:lang="cs-t-en-t0-mtec">Stáhněte si datový soubor ve formátu TSV</dct:description>
+            <dct:identifier>https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=tsv&amp;compressed=true</dct:identifier>
+            <dct:description xml:lang="et-t-en-t0-mtec">Andmestiku allalaadimine TSV-vormingus</dct:description>
+            <dct:title xml:lang="da-t-en-t0-mtec">Download datasæt i TSV-format</dct:title>
+            <dct:title xml:lang="et-t-en-t0-mtec">Andmestiku allalaadimine TSV-vormingus</dct:title>
+            <dct:description xml:lang="hr-t-en-t0-mtec">Preuzimanje skupova podataka u TSV formatu</dct:description>
+            <dct:title xml:lang="uk-t-en-t0-mtec">Завантажити набір даних у форматі TSV</dct:title>
+            <dct:title xml:lang="de-t-en-t0-mtec">Datensatz im TSV-Format herunterladen</dct:title>
+            <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+            <dct:title xml:lang="en">Download dataset in TSV format</dct:title>
+            <dct:description xml:lang="de-t-en-t0-mtec">Datensatz im TSV-Format herunterladen</dct:description>
+            <dct:title xml:lang="it-t-en-t0-mtec">Scarica set di dati in formato TSV</dct:title>
+            <dct:title xml:lang="cs-t-en-t0-mtec">Stáhnout datový soubor ve formátu TSV</dct:title>
+            <dct:title xml:lang="lt-t-en-t0-mtec">Parsisiųsti duomenų rinkinį TSV formatu</dct:title>
+            <dct:title xml:lang="ga-t-en-t0-mtec">Íoslódáil tacar sonraí i bhformáid TSV</dct:title>
+            <dct:description xml:lang="bg-t-en-t0-mtec">Изтегляне на набор от данни във формат TSV</dct:description>
+            <dct:description xml:lang="mt-t-en-t0-mtec">Niżżel is-sett tad-data f’format TSV</dct:description>
+            <dct:title xml:lang="el-t-en-t0-mtec">Κατεβάστε το σύνολο δεδομένων σε μορφή TSV</dct:title>
+            <dct:description xml:lang="hu-t-en-t0-mtec">Adatkészlet letöltése TSV formátumban</dct:description>
+            <dct:title xml:lang="bg-t-en-t0-mtec">Изтегляне на набор от данни във формат TSV</dct:title>
+            <dct:description xml:lang="sk-t-en-t0-mtec">Sťahovanie dát vo formáte TSV</dct:description>
+            <dct:description xml:lang="fi-t-en-t0-mtec">Lataa tietoaineisto TSV-muodossa</dct:description>
+            <dct:description xml:lang="es-t-en-t0-mtec">Descargar el conjunto de datos en formato TSV</dct:description>
+            <dct:format>
+              <dct:MediaTypeOrExtent rdf:about="http://publications.europa.eu/resource/authority/file-type/TSV"/>
+            </dct:format>
+            <dct:title xml:lang="nl-t-en-t0-mtec">Dataset downloaden in TSV-formaat</dct:title>
+            <dct:title xml:lang="pl-t-en-t0-mtec">Pobierz zbiór danych w formacie TSV</dct:title>
+            <dct:description xml:lang="pl-t-en-t0-mtec">Pobierz zestaw danych w formacie TSV</dct:description>
+            <dcat:accessURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=tsv&amp;compressed=true"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE"/>
+            <dct:description xml:lang="fr-t-en-t0-mtec">Télécharger l’ensemble de données au format TSV</dct:description>
+            <dct:title xml:lang="ro-t-en-t0-mtec">Descărcați setul de date în format TSV</dct:title>
+            <dct:description xml:lang="lv-t-en-t0-mtec">Lejupielādēt datu kopu TSV formātā</dct:description>
+            <dcat:downloadURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/sts_rb_m?format=tsv&amp;compressed=true"/>
+            <dct:title xml:lang="es-t-en-t0-mtec">Descargar conjunto de datos en formato TSV</dct:title>
+            <dct:title xml:lang="fr-t-en-t0-mtec">Télécharger l’ensemble de données au format TSV</dct:title>
+            <dct:description xml:lang="el-t-en-t0-mtec">Λήψη συνόλου δεδομένων σε μορφή TSV</dct:description>
+            <dct:compressformat rdf:resource="http://publications.europa.eu/resource/authority/file-type/GZIP"/>
+            <dct:title xml:lang="lv-t-en-t0-mtec">Lejupielādēt datu kopu TSV formātā</dct:title>
+            <dct:title xml:lang="sv-t-en-t0-mtec">Ladda ner dataset i TSV-format</dct:title>
+            <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+            <dct:description xml:lang="it-t-en-t0-mtec">Scarica il set di dati in formato TSV</dct:description>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
+            <dct:description xml:lang="lt-t-en-t0-mtec">Parsisiųsti duomenų rinkinį TSV formatu</dct:description>
+            <dct:title xml:lang="pt-t-en-t0-mtec">Transferir conjunto de dados em formato TSV</dct:title>
+            <dct:title xml:lang="sl-t-en-t0-mtec">Prenos nabora podatkov v formatu TSV</dct:title>
+            <dct:title xml:lang="sk-t-en-t0-mtec">Stiahnuť súbor údajov vo formáte TSV</dct:title>
+            <dct:description xml:lang="pt-t-en-t0-mtec">Baixe o conjunto de dados no formato TSV</dct:description>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <dct:title xml:lang="lv-t-en-t0-mtec">Uzņēmumu reģistrācijas un bankrota indekss pēc NACE 2. red. darbības — mēneša dati</dct:title>
+        <dct:description xml:lang="ga-t-en-t0-mtec">Innéacs clárúcháin gnó agus féimheachta de réir ghníomhaíocht NACE Rev.2 — sonraí míosúla</dct:description>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/EUR"/>
+        </dct:spatial>
+        <dct:title xml:lang="lt-t-en-t0-mtec">Įmonių registravimo ir bankroto indeksas pagal NACE 2 red. veiklos rūšis – mėnesio duomenys</dct:title>
+        <dcat:keyword>NACE_R2</dcat:keyword>
+        <dcat:landingPage rdf:resource="https://ec.europa.eu/eurostat/databrowser/product/page/sts_rb_m"/>
+        <dcat:keyword>FREQ</dcat:keyword>
+        <dcat:contactPoint>
+          <vcard:Kind rdf:about="http://www.w3.org/2006/vcard/ns#Kind/9b4bd10b-2989-4f9e-9679-d871d5a6927f">
+            <vcard:organisation-name>Eurostat, the statistical office of the European Union</vcard:organisation-name>
+            <vcard:hasTelephone>
+              <vcard:Voice rdf:about="http://data.europa.eu/88u/voice/+352430136789">
+                <vcard:hasValue rdf:resource="tel:+352430136789"/>
+              </vcard:Voice>
+            </vcard:hasTelephone>
+            <vcard:hasURL>
+              <foaf:Document rdf:about="http://ec.europa.eu/eurostat/help/support">
+                <foaf:topic rdf:resource="file:///usr/verticles/"/>
+                <schema:url>http://ec.europa.eu/eurostat/help/support</schema:url>
+              </foaf:Document>
+            </vcard:hasURL>
+            <vcard:hasAddress>
+              <vcard:Address rdf:about="http://www.w3.org/2006/vcard/ns#Address/447b21f5-3d1a-4cf4-a1b8-55520754099b">
+                <vcard:street-address>Joseph Bech building, 5 Rue Alphonse Weicker, L-2721 Luxembourg</vcard:street-address>
+              </vcard:Address>
+            </vcard:hasAddress>
+          </vcard:Kind>
+        </dcat:contactPoint>
+        <dct:description xml:lang="fi-t-en-t0-mtec">Yritysten rekisteröinti- ja konkurssi-indeksi NACE Rev. 2:n toimialan mukaan – kuukausittaiset tiedot</dct:description>
+        <foaf:page>
+          <foaf:Document rdf:about="https://ec.europa.eu/eurostat/cache/metadata/en/sts_esms.htm">
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html"/>
+            <dct:title xml:lang="en">ESMS metadata (Euro-SDMX Metadata structure) HTML</dct:title>
+            <foaf:topic rdf:resource="https://ec.europa.eu/eurostat/databrowser/product/page/sts_rb_m"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/documentation-type/DOCUMENTATION_MAIN"/>
+            <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+            <schema:url xml:lang="en">https://ec.europa.eu/eurostat/cache/metadata/en/sts_esms.htm</schema:url>
+          </foaf:Document>
+        </foaf:page>
+        <dct:description xml:lang="pl-t-en-t0-mtec">Wskaźnik rejestracji i upadłości według działalności NACE Rev.2 – dane miesięczne</dct:description>
+        <adms:identifier>
+          <adms:Identifier rdf:about="https://doi.org/10.2908/STS_RB_M">
+            <dct:creator rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/ESTAT"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2023-12-12</dct:issued>
+            <j.1:core.htmlnotation rdf:datatype="http://purl.org/spar/datacite/doi"
+            >10.2908/STS_RB_M</j.1:core.htmlnotation>
+          </adms:Identifier>
+        </adms:identifier>
+        <foaf:page>
+          <foaf:Document rdf:about="https://wikis.ec.europa.eu/display/EUROSTATHELP/Eurostat+-+Data+Browser+online+help">
+            <dct:title xml:lang="fr">Eurostat - Statistiques européennes: aide en ligne</dct:title>
+            <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+            <schema:url xml:lang="en">https://wikis.ec.europa.eu/display/EUROSTATHELP/Eurostat+-+Data+Browser+online+help</schema:url>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/documentation-type/WEBPAGE_RELATED"/>
+            <dct:title xml:lang="de">Eurostat - Europäische Statistiken: Online Hilfe</dct:title>
+            <foaf:topic rdf:resource="https://ec.europa.eu/eurostat/databrowser/product/page/sts_rb_m"/>
+            <dct:title xml:lang="en">Eurostat - European statistics : online help</dct:title>
+          </foaf:Document>
+        </foaf:page>
+        <dct:title xml:lang="fr">Indice des immatriculations et faillites d’entreprises par activité NACE rév. 2 - données mensuelles</dct:title>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/6591d955-842b-481a-9238-43895d3a35d2">
+            <dct:description xml:lang="uk-t-en-t0-mtec">Завантажити метадані у форматі SDMX 2.1</dct:description>
+            <dct:title xml:lang="bg-t-en-t0-mtec">Изтегляне на метаданни във формат SDMX 2.1</dct:title>
+            <dct:title xml:lang="ro-t-en-t0-mtec">Descărcați metadate în format SDMX 2.1</dct:title>
+            <dct:title xml:lang="et-t-en-t0-mtec">Laadige alla metaandmed SDMX 2.1 formaadis</dct:title>
+            <dct:description xml:lang="et-t-en-t0-mtec">Metaandmete allalaadimine SDMX 2.1 formaadis</dct:description>
+            <dct:description xml:lang="el-t-en-t0-mtec">Λήψη μεταδεδομένων σε μορφή SDMX 2.1</dct:description>
+            <dct:title xml:lang="it-t-en-t0-mtec">Scarica i metadati in formato SDMX 2.1</dct:title>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE"/>
+            <dct:title xml:lang="ga-t-en-t0-mtec">Íoslódáil meiteashonraí i bhformáid SDMX 2.1</dct:title>
+            <dct:title xml:lang="hr-t-en-t0-mtec">Preuzimanje metapodataka u SDMX 2.1 formatu</dct:title>
+            <dcat:downloadURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/sts_rb_m?references=descendants&amp;detail=referencepartial&amp;format=sdmx_2.1_generic&amp;compressed=true"/>
+            <dct:title xml:lang="pl-t-en-t0-mtec">Pobierz metadane w formacie SDMX 2.1</dct:title>
+            <dcat:accessURL rdf:resource="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/sts_rb_m?references=descendants&amp;detail=referencepartial&amp;format=sdmx_2.1_generic&amp;compressed=true"/>
+            <dct:title xml:lang="hu-t-en-t0-mtec">Metaadatok letöltése SDMX 2.1 formátumban</dct:title>
+            <dct:description xml:lang="mt-t-en-t0-mtec">Niżżel il-metadata f’format SDMX 2.1</dct:description>
+            <dct:title xml:lang="cs-t-en-t0-mtec">Stáhněte si metadata ve formátu SDMX 2.1</dct:title>
+            <dct:description xml:lang="da-t-en-t0-mtec">Download metadata i SDMX 2.1 format</dct:description>
+            <dct:title xml:lang="da-t-en-t0-mtec">Download metadata i SDMX 2.1 format</dct:title>
+            <dct:description xml:lang="fr-t-en-t0-mtec">Télécharger les métadonnées au format SDMX 2.1</dct:description>
+            <dct:title xml:lang="fi-t-en-t0-mtec">Lataa metatiedot SDMX 2.1 -muodossa</dct:title>
+            <dct:title xml:lang="mt-t-en-t0-mtec">Niżżel il-metadejta fil-format SDMX 2.1</dct:title>
+            <dct:description xml:lang="pt-t-en-t0-mtec">Baixar metadados no formato SDMX 2.1</dct:description>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+            <dct:description xml:lang="es-t-en-t0-mtec">Descargar metadatos en formato SDMX 2.1</dct:description>
+            <dct:title xml:lang="nl-t-en-t0-mtec">Metagegevens downloaden in SDMX 2.1-formaat</dct:title>
+            <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+            <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+            <dct:title xml:lang="el-t-en-t0-mtec">Λήψη μεταδεδομένων σε μορφή SDMX 2.1</dct:title>
+            <dct:description xml:lang="lt-t-en-t0-mtec">Atsisiųskite metaduomenis SDMX 2.1 formatu</dct:description>
+            <dct:description xml:lang="hr-t-en-t0-mtec">Preuzimanje metapodataka u SDMX 2.1 formatu</dct:description>
+            <dct:description xml:lang="nl-t-en-t0-mtec">Metagegevens downloaden in SDMX 2.1-formaat</dct:description>
+            <dct:description xml:lang="sv-t-en-t0-mtec">Ladda ner metadata i SDMX 2.1-format</dct:description>
+            <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+            <dct:title xml:lang="sk-t-en-t0-mtec">Stiahnuť metadáta vo formáte SDMX 2.1</dct:title>
+            <dct:title xml:lang="de-t-en-t0-mtec">Metadaten im SDMX 2.1 Format herunterladen</dct:title>
+            <dct:title xml:lang="sv-t-en-t0-mtec">Ladda ner metadata i SDMX 2.1-format</dct:title>
+            <dct:description xml:lang="cs-t-en-t0-mtec">Stáhnout metadata ve formátu SDMX 2.1</dct:description>
+            <dct:description xml:lang="bg-t-en-t0-mtec">Изтегляне на метаданни във формат SDMX 2.1</dct:description>
+            <dct:title xml:lang="fr-t-en-t0-mtec">Télécharger les métadonnées au format SDMX 2.1</dct:title>
+            <dct:title xml:lang="es-t-en-t0-mtec">Descargar metadatos en formato SDMX 2.1</dct:title>
+            <dct:description xml:lang="it-t-en-t0-mtec">Scarica i metadati in formato SDMX 2.1</dct:description>
+            <dct:title xml:lang="en">Download metadata in SDMX 2.1 format</dct:title>
+            <dct:description xml:lang="ga-t-en-t0-mtec">Íoslódáil meiteashonraí i bhformáid SDMX 2.1</dct:description>
+            <dct:identifier>https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/sts_rb_m?references=descendants&amp;detail=referencepartial&amp;format=sdmx_2.1_generic&amp;compressed=true</dct:identifier>
+            <dct:title xml:lang="lt-t-en-t0-mtec">Atsisiųskite metaduomenis SDMX 2.1 formatu</dct:title>
+            <dct:description xml:lang="fi-t-en-t0-mtec">Lataa metatiedot SDMX 2.1 -muodossa</dct:description>
+            <dct:description xml:lang="hu-t-en-t0-mtec">Metaadatok letöltése SDMX 2.1 formátumban</dct:description>
+            <dct:title xml:lang="sl-t-en-t0-mtec">Prenos metapodatkov v formatu SDMX 2.1</dct:title>
+            <dct:description xml:lang="pl-t-en-t0-mtec">Pobierz metadane w formacie SDMX 2.1</dct:description>
+            <dct:title xml:lang="pt-t-en-t0-mtec">Descarregar metadados no formato SDMX 2.1</dct:title>
+            <dct:description xml:lang="sk-t-en-t0-mtec">Sťahovanie metaúdajov vo formáte SDMX 2.1</dct:description>
+            <dct:description xml:lang="sl-t-en-t0-mtec">Prenos metapodatkov v formatu SDMX 2.1</dct:description>
+            <dct:description xml:lang="de-t-en-t0-mtec">Metadaten im SDMX 2.1 Format herunterladen</dct:description>
+            <dct:title xml:lang="lv-t-en-t0-mtec">Lejupielādēt metadatus SDMX 2.1 formātā</dct:title>
+            <dct:description xml:lang="ro-t-en-t0-mtec">Descărcați metadate în format SDMX 2.1</dct:description>
+            <dct:description xml:lang="lv-t-en-t0-mtec">Lejupielādēt metadatus SDMX 2.1 formātā</dct:description>
+            <dct:title xml:lang="uk-t-en-t0-mtec">Завантажити метадані у форматі SDMX 2.1</dct:title>
+            <dct:compressformat rdf:resource="http://publications.europa.eu/resource/authority/file-type/GZIP"/>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/PRT"/>
+        </dct:spatial>
+        <dct:spatial>
+          <dct:Location rdf:about="http://publications.europa.eu/resource/authority/country/MLT"/>
+        </dct:spatial>
+        <j.0:dimension>
+          <j.2:DimensionProperty rdf:about="https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/UNIT"/>
+        </j.0:dimension>
+        <dct:title xml:lang="ro-t-en-t0-mtec">Indicele de înregistrare a întreprinderilor și faliment pe activități NACE Rev.2 – date lunare</dct:title>
+        <dct:description xml:lang="hu-t-en-t0-mtec">Cégnyilvántartási és csődindex NACE Rev.2 tevékenység szerint – havi adatok</dct:description>
+        <dct:title xml:lang="hr-t-en-t0-mtec">Registracijski i stečajni indeks poduzeća prema djelatnosti NACE Rev.2 – mjesečni podaci</dct:title>
+      </dcat:Dataset>
+    </foaf:primaryTopic>
+    <dqv:hasQualityMetadata rdf:resource="http://data.europa.eu/88u/metrics/o4jxju2jgbnwrakwlnog"/>
+    <dct:creator rdf:resource="http://piveau.io"/>
+    <edp:transIssued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-10-19T17:00:09Z</edp:transIssued>
+  </dcat:CatalogRecord>
+</rdf:RDF>
