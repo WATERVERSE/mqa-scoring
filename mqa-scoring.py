@@ -95,8 +95,8 @@ def main():
     g.parse(data=json.dumps(dataset_content), format="json-ld")
 
     mach_read_path = os.path.join(install_dir, MACH_READ_FILE)
-    non_prop_path = os.path.join(install_dir, NON_PROP_FILE)
     mach_read_voc = load_edp_vocabulary(mach_read_path)
+    non_prop_path = os.path.join(install_dir, NON_PROP_FILE)
     non_prop_voc = load_edp_vocabulary(non_prop_path)
 
     weight = 0
@@ -104,20 +104,12 @@ def main():
     # print('   Current weight =', weight)
 
     metrics = get_metrics(g)
-    f_res = {}
-    f_res = f_res.fromkeys(['result', 'url', 'weight'])
-    m_res = {}
-    m_res = m_res.fromkeys(['result', 'weight'])
-
     result_details = {}
     for pred in metrics.keys():
         met = str_metric(pred, g)
         objs = metrics[pred]
-        if met == "dcat:accessURL":
-            result_met = mqa.access_url(objs)
-        elif met == "dcat:downloadURL":
-            result_met = mqa.download_url(objs)
-        elif met == "dcat:keyword":
+        # Findability
+        if met == "dcat:keyword":
             result_met = mqa.keyword()
         elif met == "dcat:theme":
             result_met = mqa.theme()
@@ -125,18 +117,26 @@ def main():
             result_met = mqa.spatial()
         elif met == "dct:temporal":
             result_met = mqa.temporal()
+        # Accessibility
+        elif met == "dcat:accessURL":
+            result_met = mqa.access_url(objs)
+        elif met == "dcat:downloadURL":
+            result_met = mqa.download_url(objs)
+        # Interoperability
         elif met == "dct:format":
             result_met = mqa.format(objs, mach_read_voc, non_prop_voc)
-        elif met == "dct:license":
-            result_met = mqa.license(objs)
-        elif met == "dcat:contactPoint":
-            result_met = mqa.contact_point()
         elif met == "dcat:mediaType":
             result_met = mqa.mediatype(objs)
-        elif met == "dct:publisher":
-            result_met = mqa.publisher()
+        # Reusability
+        elif met == "dct:license":
+            result_met = mqa.license(objs)
         elif met == "dct:accessRights":
             result_met = mqa.access_rights(objs)
+        elif met == "dcat:contactPoint":
+            result_met = mqa.contact_point()
+        elif met == "dct:publisher":
+            result_met = mqa.publisher()
+        # Contextuality
         elif met == "dct:issued":
             result_met = mqa.issued()
         elif met == "dct:modified":
@@ -150,20 +150,14 @@ def main():
         result_details[met] = result_met
         weight += result_met['weight']
 
-    all_supported_metadata = ["dcat:accessURL", "dcat:downloadURL", "dcat:keyword", "dcat:theme", "dct:spatial",
-                             "dct:temporal", "dct:format", "dct:license", "dcat:contactPoint", "dcat:mediaType",
-                             "dct:publisher", "dct:accessRights", "dct:issued", "dct:modified", "dct:rights", 
-                             "dcat:byteSize"]
+    findability_metadata = ["dcat:keyword", "dcat:theme", "dct:spatial", "dct:temporal"]
+    accessibility_metadata = ["dcat:accessURL", "dcat:downloadURL"]
+    interoperability_metadata = ["dct:format", "dcat:mediaType"]
+    reusability_metadata = ["dct:license", "dct:accessRights", "dcat:contactPoint", "dct:publisher"]
+    contextuality_metadata = ["dct:issued", "dct:modified", "dct:rights", "dcat:byteSize"]
+    all_supported_metadata = findability_metadata + accessibility_metadata + interoperability_metadata + reusability_metadata + contextuality_metadata
     all_evaluated_metadata = list(result_details.keys())
     not_evaluated_metadata = list(set(all_supported_metadata) - set(all_evaluated_metadata))
-
-    # print('* dct:format & dcat:mediaType')
-    # if f_res['result'] and m_res['result']:
-    #     weight = weight + 10
-    #     print('   Result: OK. The properties belong to a controlled vocabulary. Weight assigned 10')
-    #     print('   Current weight=', weight)
-    # else:
-    #     print('   Result: WARN. The properties do not belong to a controlled vocabulary')
 
     result = {
         'fairScore': {

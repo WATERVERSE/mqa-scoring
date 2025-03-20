@@ -8,6 +8,22 @@ import requests
 from rdflib import Graph, URIRef
 
 
+def keyword():
+    return format_result(30, 'OK. The property is set. Weight assigned 30')
+
+
+def theme():
+    return format_result(30, 'OK. The property is set. Weight assigned 30')
+
+
+def spatial():
+    return format_result(20, 'OK. The property is set. Weight assigned 20')
+
+
+def temporal():
+    return format_result(20, 'OK. The property is set. Weight assigned 20')
+
+
 def access_url(urls):
     checked = True
     for url in urls:
@@ -41,22 +57,6 @@ def download_url(urls):
     else:
         return format_result(20, 'WARN - Property assigned but responded status code of HTTP HEAD request is not in '
                                  'the 200 or 300 range. Weight assigned to 20')
-
-
-def keyword():
-    return format_result(30, 'OK. The property is set. Weight assigned 30')
-
-
-def theme():
-    return format_result(30, 'OK. The property is set. Weight assigned 30')
-
-
-def spatial():
-    return format_result(20, 'OK. The property is set. Weight assigned 20')
-
-
-def temporal():
-    return format_result(20, 'OK. The property is set. Weight assigned 20')
 
 
 def format(urls, mach_read_voc, non_prop_voc):
@@ -97,6 +97,20 @@ def format(urls, mach_read_voc, non_prop_voc):
     return {'details': details, 'weight': weight}
 
 
+def mediatype(urls):
+    checked = True
+    for url in urls:
+        res = requests.get(str(url))
+        if res.status_code != 404:
+            checked = checked and True
+        else:
+            checked = checked and False
+    if checked:
+        return format_result(20, 'OK. The property is set and correct. Weight assigned 20')
+    else:
+        return format_result(10, 'OK. The property is set but incorrect. Weight assigned 10')
+
+
 def license(urls):
     checked = True
     for url in urls:
@@ -115,20 +129,6 @@ def license(urls):
 
 def contact_point():
     return format_result(20, 'OK. The property is set. Weight assigned 20')
-
-
-def mediatype(urls):
-    checked = True
-    for url in urls:
-        res = requests.get(str(url))
-        if res.status_code != 404:
-            checked = checked and True
-        else:
-            checked = checked and False
-    if checked:
-        return format_result(20, 'OK. The property is set and correct. Weight assigned 20')
-    else:
-        return format_result(10, 'OK. The property is set but incorrect. Weight assigned 10')
 
 
 def publisher():
