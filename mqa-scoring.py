@@ -150,9 +150,12 @@ def main():
         elif met == "dcat:byteSize":
             result_met = mqa.byte_size()
         else:
-            result_met = other_cases(predicate, objs, g)
-        result_details[met] = result_met
-        weight += result_met['weight']
+            # for now, don't add all the attributes found in the report
+            # result_met = other_cases(predicate, objs, g)
+            result_met = {}
+        if len(result_met) > 0:
+            result_details[met] = result_met
+            weight += result_met['weight']
 
     findability_metadata = ["dcat:keyword", "dcat:theme", "dcterms:spatial", "dcterms:temporal"]
     accessibility_metadata = ["dcat:accessURL", "dcat:downloadURL"]
@@ -168,7 +171,7 @@ def main():
     all_supported_metadata = (findability_metadata + accessibility_metadata + interoperability_metadata +
                               reusability_metadata + contextuality_metadata)
 
-    all_evaluated_metadata = list(result_details.keys())
+    all_evaluated_metadata = list(result_details.keys() & set(metadata_per_entity_type[entity_type]))
     not_evaluated_metadata = list(set(metadata_per_entity_type[entity_type]) - set(all_evaluated_metadata))
 
     result = {
@@ -176,8 +179,8 @@ def main():
             'type': 'Property',
             'value': weight,
             'details': {
-                'type': 'Property',
-                'value': result_details
+                'type': 'JsonProperty',
+                'json': result_details
             },
             'evaluatedMetadata': {
                 'type': 'Property',
