@@ -88,11 +88,15 @@ def get_metrics(g):
 
 
 def main():
-    dataset_content = json.load(sys.stdin)
+    entity_content = json.load(sys.stdin)
     install_dir = sys.argv[1]
+    entity_type = sys.argv[2]
+    # Fallback to Distribution type for entities that are not datasets
+    if entity_type != 'Dataset':
+        entity_type = 'Distribution'
 
     g = Graph()
-    g.parse(data=json.dumps(dataset_content), format="json-ld")
+    g.parse(data=json.dumps(entity_content), format="json-ld")
 
     mach_read_path = os.path.join(install_dir, MACH_READ_FILE)
     mach_read_voc = load_edp_vocabulary(mach_read_path)
@@ -100,14 +104,14 @@ def main():
     non_prop_voc = load_edp_vocabulary(non_prop_path)
 
     weight = 0
-    # weight = edp_validator(json.dumps(dataset_content), weight)
+    # weight = edp_validator(json.dumps(entity_content), weight)
     # print('   Current weight =', weight)
 
     metrics = get_metrics(g)
     result_details = {}
-    for pred in metrics.keys():
-        met = str_metric(pred, g)
-        objs = metrics[pred]
+    for predicate in metrics.keys():
+        met = str_metric(predicate, g)
+        objs = metrics[predicate]
         # Findability
         if met == "dcat:keyword":
             result_met = mqa.keyword()
@@ -146,7 +150,7 @@ def main():
         elif met == "dcat:byteSize":
             result_met = mqa.byte_size()
         else:
-            result_met = other_cases(pred, objs, g)
+            result_met = other_cases(predicate, objs, g)
         result_details[met] = result_met
         weight += result_met['weight']
 
@@ -155,9 +159,17 @@ def main():
     interoperability_metadata = ["dct:format", "dcat:mediaType"]
     reusability_metadata = ["dct:license", "dct:accessRights", "dcat:contactPoint", "dct:publisher"]
     contextuality_metadata = ["dct:issued", "dct:modified", "dct:rights", "dcat:byteSize"]
-    all_supported_metadata = findability_metadata + accessibility_metadata + interoperability_metadata + reusability_metadata + contextuality_metadata
+    metadata_per_entity_type = {
+        'Dataset': ["dcat:keyword", "dcat:theme", "dct:spatial", "dct:temporal", "dct:accessRights",
+                    "dcat:contactPoint", "dct:publisher", "dct:issued", "dct:modified"],
+        'Distribution': ["dcat:accessURL", "dcat:downloadURL", "dct:format", "dcat:mediaType", "dct:license",
+                         "dct:rights", "dcat:byteSize", "dct:issued", "dct:modified"]
+    }
+    all_supported_metadata = (findability_metadata + accessibility_metadata + interoperability_metadata +
+                              reusability_metadata + contextuality_metadata)
+
     all_evaluated_metadata = list(result_details.keys())
-    not_evaluated_metadata = list(set(all_supported_metadata) - set(all_evaluated_metadata))
+    not_evaluated_metadata = list(set(metadata_per_entity_type[entity_type]) - set(all_evaluated_metadata))
 
     result = {
         'fairScore': {
