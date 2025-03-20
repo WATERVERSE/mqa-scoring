@@ -117,9 +117,9 @@ def main():
             result_met = mqa.keyword()
         elif met == "dcat:theme":
             result_met = mqa.theme()
-        elif met == "dct:spatial":
+        elif met == "dcterms:spatial":
             result_met = mqa.spatial()
-        elif met == "dct:temporal":
+        elif met == "dcterms:temporal":
             result_met = mqa.temporal()
         # Accessibility
         elif met == "dcat:accessURL":
@@ -127,25 +127,25 @@ def main():
         elif met == "dcat:downloadURL":
             result_met = mqa.download_url(objs)
         # Interoperability
-        elif met == "dct:format":
+        elif met == "dcterms:format":
             result_met = mqa.format(objs, mach_read_voc, non_prop_voc)
         elif met == "dcat:mediaType":
             result_met = mqa.mediatype(objs)
         # Reusability
-        elif met == "dct:license":
+        elif met == "dcterms:license":
             result_met = mqa.license(objs)
-        elif met == "dct:accessRights":
+        elif met == "dcterms:accessRights":
             result_met = mqa.access_rights(objs)
         elif met == "dcat:contactPoint":
             result_met = mqa.contact_point()
-        elif met == "dct:publisher":
+        elif met == "dcterms:publisher":
             result_met = mqa.publisher()
         # Contextuality
-        elif met == "dct:issued":
+        elif met == "dcterms:issued":
             result_met = mqa.issued()
-        elif met == "dct:modified":
+        elif met == "dcterms:modified":
             result_met = mqa.modified()
-        elif met == "dct:rights":
+        elif met == "dcterms:rights":
             result_met = mqa.rights()
         elif met == "dcat:byteSize":
             result_met = mqa.byte_size()
@@ -154,16 +154,16 @@ def main():
         result_details[met] = result_met
         weight += result_met['weight']
 
-    findability_metadata = ["dcat:keyword", "dcat:theme", "dct:spatial", "dct:temporal"]
+    findability_metadata = ["dcat:keyword", "dcat:theme", "dcterms:spatial", "dcterms:temporal"]
     accessibility_metadata = ["dcat:accessURL", "dcat:downloadURL"]
-    interoperability_metadata = ["dct:format", "dcat:mediaType"]
-    reusability_metadata = ["dct:license", "dct:accessRights", "dcat:contactPoint", "dct:publisher"]
-    contextuality_metadata = ["dct:issued", "dct:modified", "dct:rights", "dcat:byteSize"]
+    interoperability_metadata = ["dcterms:format", "dcat:mediaType"]
+    reusability_metadata = ["dcterms:license", "dcterms:accessRights", "dcat:contactPoint", "dcterms:publisher"]
+    contextuality_metadata = ["dcterms:issued", "dcterms:modified", "dcterms:rights", "dcat:byteSize"]
     metadata_per_entity_type = {
-        'Dataset': ["dcat:keyword", "dcat:theme", "dct:spatial", "dct:temporal", "dct:accessRights",
-                    "dcat:contactPoint", "dct:publisher", "dct:issued", "dct:modified"],
-        'Distribution': ["dcat:accessURL", "dcat:downloadURL", "dct:format", "dcat:mediaType", "dct:license",
-                         "dct:rights", "dcat:byteSize", "dct:issued", "dct:modified"]
+        'Dataset': ["dcat:keyword", "dcat:theme", "dcterms:spatial", "dcterms:temporal", "dcterms:accessRights",
+                    "dcat:contactPoint", "dcterms:publisher", "dcterms:issued", "dcterms:modified"],
+        'Distribution': ["dcat:accessURL", "dcat:downloadURL", "dcterms:format", "dcat:mediaType", "dcterms:license",
+                         "dcterms:rights", "dcat:byteSize", "dcterms:issued", "dcterms:modified"]
     }
     all_supported_metadata = (findability_metadata + accessibility_metadata + interoperability_metadata +
                               reusability_metadata + contextuality_metadata)
