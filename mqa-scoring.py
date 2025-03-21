@@ -143,7 +143,7 @@ def main():
         # Contextuality
         elif met == "dcterms:issued":
             result_met = mqa.issued()
-        elif met == "dcterms:modified":
+        elif met == "dcterms:modified" or met == "ngsi-ld:modifiedAt":
             result_met = mqa.modified()
         elif met == "dcterms:rights":
             result_met = mqa.rights()
@@ -172,6 +172,8 @@ def main():
                               reusability_metadata + contextuality_metadata)
 
     all_evaluated_metadata = list(result_details.keys() & set(metadata_per_entity_type[entity_type]))
+    if "ngsi-ld:modifiedAt" in result_details.keys():
+        all_evaluated_metadata.append("dcterms:modified")
     not_evaluated_metadata = list(set(metadata_per_entity_type[entity_type]) - set(all_evaluated_metadata))
 
     result = {
