@@ -180,13 +180,9 @@ def main():
         'fairScore': {
             'type': 'Property',
             'value': weight,
-            'details': {
+            'evaluatedMetadata': {
                 'type': 'JsonProperty',
                 'json': result_details
-            },
-            'evaluatedMetadata': {
-                'type': 'Property',
-                'value': ','.join(all_evaluated_metadata)
             },
             'notEvaluatedMetadata': {
                 'type': 'Property',
