@@ -181,8 +181,8 @@ def main():
             'type': 'Property',
             'value': weight,
             'evaluatedMetadata': {
-                'type': 'JsonProperty',
-                'json': all_evaluated_metadata
+                'type': 'Property',
+                'value': ','.join(all_evaluated_metadata)
             },
             'notEvaluatedMetadata': {
                 'type': 'Property',
